@@ -1,0 +1,11 @@
+# Ignore dependency directories
+website/premium-fashion-website-main/node_modules/
+
+# Ignore build outputs
+website/premium-fashion-website-main/dist/
+
+# Ignore system files
+.DS_Store
+._*
+.thumbs
+Thumbs.db
