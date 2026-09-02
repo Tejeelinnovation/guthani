@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 
 // Workspace root is 3 levels up from scripts directory
 const workspaceRoot = path.resolve(__dirname, "../../..");
-const photoshootDirName = "Guthni photoshoot edited ";
+const photoshootDirName = "new_webp_format_images";
 const photoshootDir = path.join(workspaceRoot, photoshootDirName);
 
 const getProductNumber = (dirName) => {

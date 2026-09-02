@@ -19,9 +19,9 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 1/IMG_2827.jpg",
-      "Guthni photoshoot edited /Product 1/IMG_2828.jpg",
-      "Guthni photoshoot edited /Product 1/IMG_2829.jpg"
+      "new_webp_format_images/Product 1/IMG_2827.webp",
+      "new_webp_format_images/Product 1/IMG_2828.webp",
+      "new_webp_format_images/Product 1/IMG_2829.webp"
     ]
   },
   {
@@ -43,9 +43,9 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 2/IMG_2834.jpg",
-      "Guthni photoshoot edited /Product 2/IMG_2835.jpg",
-      "Guthni photoshoot edited /Product 2/IMG_2838.jpg"
+      "new_webp_format_images/Product 2/IMG_2834.webp",
+      "new_webp_format_images/Product 2/IMG_2835.webp",
+      "new_webp_format_images/Product 2/IMG_2838.webp"
     ]
   },
   {
@@ -67,9 +67,9 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 3/IMG_2842.jpg",
-      "Guthni photoshoot edited /Product 3/IMG_2849.jpg",
-      "Guthni photoshoot edited /Product 3/IMG_2850.jpg"
+      "new_webp_format_images/Product 3/IMG_2842.webp",
+      "new_webp_format_images/Product 3/IMG_2849.webp",
+      "new_webp_format_images/Product 3/IMG_2850.webp"
     ]
   },
   {
@@ -91,10 +91,10 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 4/IMG_2852.jpg",
-      "Guthni photoshoot edited /Product 4/IMG_2855.jpg",
-      "Guthni photoshoot edited /Product 4/IMG_2856.jpg",
-      "Guthni photoshoot edited /Product 4/IMG_2857.jpg"
+      "new_webp_format_images/Product 4/IMG_2852.webp",
+      "new_webp_format_images/Product 4/IMG_2855.webp",
+      "new_webp_format_images/Product 4/IMG_2856.webp",
+      "new_webp_format_images/Product 4/IMG_2857.webp"
     ]
   },
   {
@@ -116,8 +116,8 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 5/IMG_2865.jpg",
-      "Guthni photoshoot edited /Product 5/IMG_2867.jpg"
+      "new_webp_format_images/Product 5/IMG_2865.webp",
+      "new_webp_format_images/Product 5/IMG_2867.webp"
     ]
   },
   {
@@ -139,10 +139,10 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 6/IMG_2871.jpg",
-      "Guthni photoshoot edited /Product 6/IMG_2872.jpg",
-      "Guthni photoshoot edited /Product 6/IMG_2873.jpg",
-      "Guthni photoshoot edited /Product 6/IMG_2874.jpg"
+      "new_webp_format_images/Product 6/IMG_2871.webp",
+      "new_webp_format_images/Product 6/IMG_2872.webp",
+      "new_webp_format_images/Product 6/IMG_2873.webp",
+      "new_webp_format_images/Product 6/IMG_2874.webp"
     ]
   },
   {
@@ -164,10 +164,10 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 7/IMG_2876.jpg",
-      "Guthni photoshoot edited /Product 7/IMG_2877.jpg",
-      "Guthni photoshoot edited /Product 7/IMG_2878.jpg",
-      "Guthni photoshoot edited /Product 7/IMG_2879.jpg"
+      "new_webp_format_images/Product 7/IMG_2876.webp",
+      "new_webp_format_images/Product 7/IMG_2877.webp",
+      "new_webp_format_images/Product 7/IMG_2878.webp",
+      "new_webp_format_images/Product 7/IMG_2879.webp"
     ]
   },
   {
@@ -189,9 +189,9 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 8/IMG_2862.jpg",
-      "Guthni photoshoot edited /Product 8/IMG_2863.jpg",
-      "Guthni photoshoot edited /Product 8/IMG_2864.jpg"
+      "new_webp_format_images/Product 8/IMG_2862.webp",
+      "new_webp_format_images/Product 8/IMG_2863.webp",
+      "new_webp_format_images/Product 8/IMG_2864.webp"
     ]
   },
   {
@@ -213,9 +213,9 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 9/IMG_2880.jpg",
-      "Guthni photoshoot edited /Product 9/IMG_2881.jpg",
-      "Guthni photoshoot edited /Product 9/IMG_2883.jpg"
+      "new_webp_format_images/Product 9/IMG_2880.webp",
+      "new_webp_format_images/Product 9/IMG_2881.webp",
+      "new_webp_format_images/Product 9/IMG_2883.webp"
     ]
   },
   {
@@ -237,10 +237,10 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 10/IMG_2889.jpg",
-      "Guthni photoshoot edited /Product 10/IMG_2890.jpg",
-      "Guthni photoshoot edited /Product 10/IMG_2891.jpg",
-      "Guthni photoshoot edited /Product 10/IMG_2893.jpg"
+      "new_webp_format_images/Product 10/IMG_2889.webp",
+      "new_webp_format_images/Product 10/IMG_2890.webp",
+      "new_webp_format_images/Product 10/IMG_2891.webp",
+      "new_webp_format_images/Product 10/IMG_2893.webp"
     ]
   },
   {
@@ -262,10 +262,10 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 11/IMG_2901.jpg",
-      "Guthni photoshoot edited /Product 11/IMG_2902.jpg",
-      "Guthni photoshoot edited /Product 11/IMG_2903.jpg",
-      "Guthni photoshoot edited /Product 11/IMG_2904.jpg"
+      "new_webp_format_images/Product 11/IMG_2901.webp",
+      "new_webp_format_images/Product 11/IMG_2902.webp",
+      "new_webp_format_images/Product 11/IMG_2903.webp",
+      "new_webp_format_images/Product 11/IMG_2904.webp"
     ]
   },
   {
@@ -287,10 +287,10 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 12/IMG_2894.jpg",
-      "Guthni photoshoot edited /Product 12/IMG_2896.jpg",
-      "Guthni photoshoot edited /Product 12/IMG_2897.jpg",
-      "Guthni photoshoot edited /Product 12/IMG_2898.jpg"
+      "new_webp_format_images/Product 12/IMG_2894.webp",
+      "new_webp_format_images/Product 12/IMG_2896.webp",
+      "new_webp_format_images/Product 12/IMG_2897.webp",
+      "new_webp_format_images/Product 12/IMG_2898.webp"
     ]
   },
   {
@@ -312,9 +312,9 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 13/IMG_2884.jpg",
-      "Guthni photoshoot edited /Product 13/IMG_2885.jpg",
-      "Guthni photoshoot edited /Product 13/IMG_2888.jpg"
+      "new_webp_format_images/Product 13/IMG_2884.webp",
+      "new_webp_format_images/Product 13/IMG_2885.webp",
+      "new_webp_format_images/Product 13/IMG_2888.webp"
     ]
   },
   {
@@ -336,9 +336,9 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 14/IMG_2932.jpg",
-      "Guthni photoshoot edited /Product 14/IMG_2933.jpg",
-      "Guthni photoshoot edited /Product 14/IMG_2936.jpg"
+      "new_webp_format_images/Product 14/IMG_2932.webp",
+      "new_webp_format_images/Product 14/IMG_2933.webp",
+      "new_webp_format_images/Product 14/IMG_2936.webp"
     ]
   },
   {
@@ -360,11 +360,11 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 15/IMG_2925.jpg",
-      "Guthni photoshoot edited /Product 15/IMG_2926.jpg",
-      "Guthni photoshoot edited /Product 15/IMG_2927.jpg",
-      "Guthni photoshoot edited /Product 15/IMG_2928.jpg",
-      "Guthni photoshoot edited /Product 15/IMG_2930.jpg"
+      "new_webp_format_images/Product 15/IMG_2925.webp",
+      "new_webp_format_images/Product 15/IMG_2926.webp",
+      "new_webp_format_images/Product 15/IMG_2927.webp",
+      "new_webp_format_images/Product 15/IMG_2928.webp",
+      "new_webp_format_images/Product 15/IMG_2930.webp"
     ]
   },
   {
@@ -386,9 +386,9 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 16/IMG_2919.jpg",
-      "Guthni photoshoot edited /Product 16/IMG_2922.jpg",
-      "Guthni photoshoot edited /Product 16/IMG_2923.jpg"
+      "new_webp_format_images/Product 16/IMG_2919.webp",
+      "new_webp_format_images/Product 16/IMG_2922.webp",
+      "new_webp_format_images/Product 16/IMG_2923.webp"
     ]
   },
   {
@@ -410,10 +410,10 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 17/IMG_2910.jpg",
-      "Guthni photoshoot edited /Product 17/IMG_2913.jpg",
-      "Guthni photoshoot edited /Product 17/IMG_2914.jpg",
-      "Guthni photoshoot edited /Product 17/IMG_2915.jpg"
+      "new_webp_format_images/Product 17/IMG_2910.webp",
+      "new_webp_format_images/Product 17/IMG_2913.webp",
+      "new_webp_format_images/Product 17/IMG_2914.webp",
+      "new_webp_format_images/Product 17/IMG_2915.webp"
     ]
   },
   {
@@ -435,10 +435,10 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 18/IMG_2906.jpg",
-      "Guthni photoshoot edited /Product 18/IMG_2907.jpg",
-      "Guthni photoshoot edited /Product 18/IMG_2908.jpg",
-      "Guthni photoshoot edited /Product 18/IMG_2909.jpg"
+      "new_webp_format_images/Product 18/IMG_2906.webp",
+      "new_webp_format_images/Product 18/IMG_2907.webp",
+      "new_webp_format_images/Product 18/IMG_2908.webp",
+      "new_webp_format_images/Product 18/IMG_2909.webp"
     ]
   },
   {
@@ -460,10 +460,10 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 19/IMG_2938.jpg",
-      "Guthni photoshoot edited /Product 19/IMG_2939.jpg",
-      "Guthni photoshoot edited /Product 19/IMG_2941.jpg",
-      "Guthni photoshoot edited /Product 19/IMG_2942.jpg"
+      "new_webp_format_images/Product 19/IMG_2938.webp",
+      "new_webp_format_images/Product 19/IMG_2939.webp",
+      "new_webp_format_images/Product 19/IMG_2941.webp",
+      "new_webp_format_images/Product 19/IMG_2942.webp"
     ]
   },
   {
@@ -485,10 +485,10 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 20/IMG_2956.jpg",
-      "Guthni photoshoot edited /Product 20/IMG_2957.jpg",
-      "Guthni photoshoot edited /Product 20/IMG_2958.jpg",
-      "Guthni photoshoot edited /Product 20/IMG_2959.jpg"
+      "new_webp_format_images/Product 20/IMG_2956.webp",
+      "new_webp_format_images/Product 20/IMG_2957.webp",
+      "new_webp_format_images/Product 20/IMG_2958.webp",
+      "new_webp_format_images/Product 20/IMG_2959.webp"
     ]
   },
   {
@@ -510,10 +510,10 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 21/IMG_2950.jpg",
-      "Guthni photoshoot edited /Product 21/IMG_2951.jpg",
-      "Guthni photoshoot edited /Product 21/IMG_2952.jpg",
-      "Guthni photoshoot edited /Product 21/IMG_2953.jpg"
+      "new_webp_format_images/Product 21/IMG_2950.webp",
+      "new_webp_format_images/Product 21/IMG_2951.webp",
+      "new_webp_format_images/Product 21/IMG_2952.webp",
+      "new_webp_format_images/Product 21/IMG_2953.webp"
     ]
   },
   {
@@ -535,9 +535,9 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 22/IMG_2943.jpg",
-      "Guthni photoshoot edited /Product 22/IMG_2947.jpg",
-      "Guthni photoshoot edited /Product 22/IMG_2948.jpg"
+      "new_webp_format_images/Product 22/IMG_2943.webp",
+      "new_webp_format_images/Product 22/IMG_2947.webp",
+      "new_webp_format_images/Product 22/IMG_2948.webp"
     ]
   },
   {
@@ -559,8 +559,8 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 23/IMG_2996.jpg",
-      "Guthni photoshoot edited /Product 23/IMG_2998.jpg"
+      "new_webp_format_images/Product 23/IMG_2996.webp",
+      "new_webp_format_images/Product 23/IMG_2998.webp"
     ]
   },
   {
@@ -582,7 +582,7 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 24/IMG_3001.jpg"
+      "new_webp_format_images/Product 24/IMG_3001.webp"
     ]
   },
   {
@@ -604,7 +604,7 @@ export const ALL_PRODUCTS = [
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
     "ratio": "portrait",
     "images": [
-      "Guthni photoshoot edited /Product 25/IMG_3005.jpg"
+      "new_webp_format_images/Product 25/IMG_3005.webp"
     ]
   }
 ];

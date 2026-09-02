@@ -33,6 +33,10 @@ import { ALL_PRODUCTS } from "./photoshootData";
 
 // Helper to resolve workspace image paths correctly under both dev and build (dist) directories
 export const getWorkspacePath = (subPath) => {
+  if (!subPath) return "";
+  if (subPath.startsWith("http://") || subPath.startsWith("https://") || subPath.startsWith("data:") || subPath.startsWith("/@fs/")) {
+    return subPath;
+  }
   const isDev = import.meta.env.DEV;
   // Correctly handle spaces in folder names and image paths
   const encodedPath = subPath.split('/').map(segment => encodeURIComponent(segment)).join('/');
@@ -677,13 +681,13 @@ function CollectionCard({ data: { id, number, name, tagline, image, image2, coun
         className={`absolute inset-0 ${circle ? "scale-110" : ""}`}
       >
         <img
-          src={image}
+          src={getWorkspacePath(image)}
           alt={name}
           loading="lazy"
           className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${hover ? "opacity-0" : "opacity-100"}`}
         />
         <img
-          src={image2 || image}
+          src={getWorkspacePath(image2 || image)}
           alt=""
           loading="lazy"
           className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${hover ? "opacity-100" : "opacity-0"}`}
@@ -1145,13 +1149,13 @@ function Lookbook() {
         <div className="grid grid-cols-12 gap-3 md:gap-5">
           {/* Tall left */}
           <div className="col-span-7 md:col-span-4 row-span-2 aspect-[3/5] rounded-[80px_8px] overflow-hidden">
-            <img src={LOOKBOOK[0].image} alt="" loading="lazy" className="h-full w-full object-cover" />
+            <img src={getWorkspacePath(LOOKBOOK[0].image)} alt="" loading="lazy" className="h-full w-full object-cover" />
           </div>
           <div className="col-span-5 md:col-span-3 aspect-[3/4] rounded-[8px_60px] overflow-hidden">
-            <img src={LOOKBOOK[1].image} alt="" loading="lazy" className="h-full w-full object-cover" />
+            <img src={getWorkspacePath(LOOKBOOK[1].image)} alt="" loading="lazy" className="h-full w-full object-cover" />
           </div>
           <div className="col-span-5 md:col-span-3 aspect-[3/4] rounded-[60px_8px_60px_8px] overflow-hidden">
-            <img src={LOOKBOOK[2].image} alt="" loading="lazy" className="h-full w-full object-cover" />
+            <img src={getWorkspacePath(LOOKBOOK[2].image)} alt="" loading="lazy" className="h-full w-full object-cover" />
           </div>
           <div className="hidden md:block col-span-2 pt-8">
             <div className="vertical-text font-sans text-[10px] tracking-[0.5em] uppercase text-pearl/60">
@@ -1161,13 +1165,13 @@ function Lookbook() {
 
           {/* Bottom row */}
           <div className="col-span-6 md:col-span-4 aspect-[4/3] rounded-[8px_60px_8px_60px] overflow-hidden mt-2 md:mt-0">
-            <img src={LOOKBOOK[3].image} alt="" loading="lazy" className="h-full w-full object-cover" />
+            <img src={getWorkspacePath(LOOKBOOK[3].image)} alt="" loading="lazy" className="h-full w-full object-cover" />
           </div>
           <div className="col-span-6 md:col-span-3 aspect-[4/5] rounded-[60px_60px_8px_8px] overflow-hidden">
-            <img src={LOOKBOOK[4].image} alt="" loading="lazy" className="h-full w-full object-cover" />
+            <img src={getWorkspacePath(LOOKBOOK[4].image)} alt="" loading="lazy" className="h-full w-full object-cover" />
           </div>
           <div className="hidden md:block col-span-2 aspect-square rounded-full overflow-hidden ring-1 ring-pearl/20">
-            <img src={LOOKBOOK[5].image} alt="" loading="lazy" className="h-full w-full object-cover" />
+            <img src={getWorkspacePath(LOOKBOOK[5].image)} alt="" loading="lazy" className="h-full w-full object-cover" />
           </div>
           <div className="hidden md:flex col-span-3 flex-col justify-between pb-4">
             <div className="font-display text-2xl">“The future of Indian elegance.”</div>
@@ -1236,7 +1240,7 @@ function FashionPortal() {
                 style={active === i ? { x: dragX } : undefined}
                 className="absolute inset-0"
               >
-                <img src={l.image} alt={l.label} className="h-full w-full object-cover" loading="lazy" />
+                <img src={getWorkspacePath(l.image)} alt={l.label} className="h-full w-full object-cover" loading="lazy" />
                 <div className="absolute inset-0 bg-gradient-to-t from-wine/40 via-transparent to-transparent" />
               </motion.div>
             ))}
@@ -1298,7 +1302,7 @@ function CraftSection() {
               transition={{ duration: 0.8, delay: (i % 4) * 0.08 }}
               className={`relative shrink-0 overflow-hidden rounded-[60px_12px] ${i % 3 === 0 ? "w-[80vw] md:w-[44vw] aspect-[16/10]" : i % 3 === 1 ? "w-[65vw] md:w-[30vw] aspect-[3/4]" : "w-[70vw] md:w-[34vw] aspect-[4/5]"}`}
             >
-              <img src={c.src} alt={c.label} loading="lazy" className="h-full w-full object-cover hover:scale-105 transition-transform duration-[1400ms]" />
+              <img src={getWorkspacePath(c.src)} alt={c.label} loading="lazy" className="h-full w-full object-cover hover:scale-105 transition-transform duration-[1400ms]" />
               <div className="absolute inset-x-0 bottom-0 p-5 md:p-6 bg-gradient-to-t from-charcoal/80 to-transparent">
                 <div className="font-sans text-[9px] tracking-[0.3em] uppercase text-pearl/70">Detail {String((i % 4) + 1).padStart(2, "0")}</div>
                 <div className="font-serif text-2xl md:text-3xl text-pearl">{c.label}</div>
@@ -1432,7 +1436,7 @@ function Instagram() {
                 data-hover
                 className={`relative group overflow-hidden ${spans[i % spans.length]} bg-champagne/30`}
               >
-                <img src={s.src} alt={s.caption} loading="lazy"
+                <img src={getWorkspacePath(s.src)} alt={s.caption} loading="lazy"
                   className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-1000" />
                 <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/40 transition-colors duration-500" />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -1578,7 +1582,7 @@ function Testimonials() {
               <AnimatePresence mode="wait">
                 <motion.img
                   key={active}
-                  src={t.image}
+                  src={getWorkspacePath(t.image)}
                   alt={t.name}
                   initial={{ opacity: 0, scale: 1.08 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -1589,10 +1593,10 @@ function Testimonials() {
               </AnimatePresence>
             </div>
             <div className="hidden md:grid absolute -left-10 top-10 h-20 w-20 rounded-full overflow-hidden ring-2 ring-pearl shadow-lg place-items-center">
-              <img src={TESTIMONIALS[(active + 1) % 3].image} alt="" className="h-full w-full object-cover" />
+              <img src={getWorkspacePath(TESTIMONIALS[(active + 1) % 3].image)} alt="" className="h-full w-full object-cover" />
             </div>
             <div className="hidden md:grid absolute -right-6 bottom-12 h-14 w-14 rounded-full overflow-hidden ring-2 ring-pearl shadow-lg place-items-center">
-              <img src={TESTIMONIALS[(active + 2) % 3].image} alt="" className="h-full w-full object-cover" />
+              <img src={getWorkspacePath(TESTIMONIALS[(active + 2) % 3].image)} alt="" className="h-full w-full object-cover" />
             </div>
           </div>
         </div>
