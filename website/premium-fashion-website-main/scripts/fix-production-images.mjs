@@ -31,13 +31,20 @@ for (let i = 1; i <= 4; i++) {
   }
 }
 
-const logoFiles = ["guthani-logo-burgundy.png", "guthani-logo-cream.png"];
+const logoFiles = ["guthani-logo-burgundy.png", "guthani-logo-cream.png", "guthani-icon.svg"];
 for (const logoName of logoFiles) {
   const srcFile = path.join(websiteDir, logoName);
   const destFile = path.join(websiteDest, logoName);
   if (fs.existsSync(srcFile)) {
     fs.copyFileSync(srcFile, destFile);
   }
+}
+
+// Copy favicon.svg directly into dist root and dist/website/
+const faviconSrc = path.join(__dirname, "../public/favicon.svg");
+if (fs.existsSync(faviconSrc)) {
+  fs.copyFileSync(faviconSrc, path.join(distDir, "favicon.svg"));
+  fs.copyFileSync(faviconSrc, path.join(websiteDest, "favicon.svg"));
 }
 console.log("Successfully copied homepage model banner images and Guthani logo assets to dist/website/ directory.");
 
