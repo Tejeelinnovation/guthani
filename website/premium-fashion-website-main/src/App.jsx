@@ -46,8 +46,8 @@ export const getWorkspacePath = (subPath) => {
     return `/@fs/Users/dhruv/arrent/guthani/${encodedPath}`;
   }
   
-  // In production single-file build, go up 3 levels (dist/ -> premium-fashion-website-main/ -> website/ -> guthani/)
-  return `../../../${encodedPath}`;
+  // In production build, assets are bundled directly inside dist
+  return `./${encodedPath}`;
 };
 
 // Resolve the 4 homepage visual model assets

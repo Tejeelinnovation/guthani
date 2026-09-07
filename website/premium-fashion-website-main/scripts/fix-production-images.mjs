@@ -1,10 +1,42 @@
 import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const workspaceRoot = path.resolve(__dirname, "../../..");
+const distDir = path.resolve(__dirname, "../dist");
+
+// Copy new_webp_format_images into dist/ for deployment hosting
+const webpSrc = path.join(workspaceRoot, "new_webp_format_images");
+const webpDest = path.join(distDir, "new_webp_format_images");
+if (fs.existsSync(webpSrc)) {
+  fs.cpSync(webpSrc, webpDest, { recursive: true });
+  console.log("Successfully copied new_webp_format_images to dist/ directory.");
+}
+
+// Copy website model banner images into dist/website/
+const websiteDir = path.join(workspaceRoot, "website");
+const websiteDest = path.join(distDir, "website");
+if (!fs.existsSync(websiteDest)) {
+  fs.mkdirSync(websiteDest, { recursive: true });
+}
+
+for (let i = 1; i <= 4; i++) {
+  const fileName = `product_model_${i}.png`;
+  const srcFile = path.join(websiteDir, fileName);
+  const destFile = path.join(websiteDest, fileName);
+  if (fs.existsSync(srcFile)) {
+    fs.copyFileSync(srcFile, destFile);
+  }
+}
+console.log("Successfully copied homepage model banner images to dist/website/ directory.");
+
+// Post-process HTML file
 const file = new URL("../dist/index.html", import.meta.url);
 let html = fs.readFileSync(file, "utf8");
 
 // Replace stale/removed demo-photo IDs with currently verified Unsplash images.
-// Replacing only the photo ID preserves each component's existing width/quality params.
 const replacements = new Map([
   ["photo-1583391733956-3750e0ff4e8b", "photo-1778148046782-2b5c2ce37612"],
   ["photo-1595777457583-95e059d581b8", "photo-1776504768745-551029df100d"],
@@ -24,8 +56,7 @@ for (const [oldId, newId] of replacements) {
   html = html.split(oldId).join(newId);
 }
 
-// Runtime safety net: if any remote image ever fails, show a verified fashion image
-// instead of leaving an empty card/section. Capture-phase error listener catches <img> errors.
+// Runtime safety net
 const fallbackScript = `<script>
 (function () {
   const fallback = "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200&q=82";
@@ -43,4 +74,4 @@ if (!html.includes("imageFallbackApplied")) {
 }
 
 fs.writeFileSync(file, html, "utf8");
-console.log(`Production image reliability pass complete (${replacements.size} stale IDs replaced).`);
+console.log(`Production build asset bundling complete (${replacements.size} stale IDs verified).`);
