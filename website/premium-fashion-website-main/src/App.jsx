@@ -30,8 +30,7 @@ import {
   BRAND_VALUES, TESTIMONIALS, SOCIAL, HOW_TO_ORDER, PORTAL_LOOKS, waLink
 } from "./data";
 import { ALL_PRODUCTS } from "./photoshootData";
-import guthaniLogoBurgundy from "./guthani-logo-burgundy.svg";
-import guthaniLogoCream from "./guthani-logo-cream.svg";
+import { GuthaniLogoBurgundy, GuthaniLogoCream } from "./GuthaniLogos";
 
 // Helper to resolve workspace image paths correctly under both dev and build (dist) directories
 export const getWorkspacePath = (subPath) => {
@@ -147,7 +146,7 @@ function Intro({ onComplete }) {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="flex justify-center"
         >
-          <img src={guthaniLogoBurgundy} alt="GUTHANI" className="h-16 md:h-24 w-auto mx-auto object-contain" />
+          <GuthaniLogoBurgundy className="h-16 md:h-24 w-auto mx-auto" />
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -287,7 +286,7 @@ function Navbar({ onMenuToggle }) {
           className={`flex items-center justify-between ${scrolled ? "glass rounded-full px-5 md:px-8 py-3 shadow-[0_10px_40px_-20px_rgba(26,23,20,0.25)]" : "px-0 py-0"}`}
         >
           <a href="#top" onClick={(e) => handleAnchorClick(e, "#top")} data-hover className="flex items-center gap-2">
-            <img src={guthaniLogoBurgundy} alt="GUTHANI" className="h-7 md:h-9 w-auto object-contain" />
+            <GuthaniLogoBurgundy className="h-7 md:h-9 w-auto" />
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -344,7 +343,7 @@ function MobileMenu({ open, onClose }) {
           <div className="absolute inset-0 grain opacity-60" />
           <div className="relative h-full flex flex-col px-6 pt-16 pb-8">
             <div className="flex items-center justify-between">
-              <img src={guthaniLogoBurgundy} alt="GUTHANI" className="h-8 w-auto object-contain" />
+              <GuthaniLogoBurgundy className="h-8 w-auto" />
               <button onClick={onClose} data-hover
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-charcoal/15">
                 <X size={16} strokeWidth={1.5} />
@@ -1585,11 +1584,7 @@ function Footer() {
             transition={{ duration: 1 }}
             className="flex justify-center my-4"
           >
-            <img 
-              src={guthaniLogoCream} 
-              alt="GUTHANI" 
-              className="h-24 md:h-44 max-w-[85vw] w-auto object-contain" 
-            />
+            <GuthaniLogoCream className="h-24 md:h-44 max-w-[85vw] w-auto mx-auto" />
           </motion.div>
           <div className="hairline mt-10" />
         </div>
