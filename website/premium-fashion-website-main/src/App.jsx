@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, useScroll, useTransform, useSpring, useMotionValue, useInView } from "framer-motion";
 import {
   ArrowUpRight, ArrowRight, Play, X, Menu as MenuIcon,
-  MessageCircle,
+  MessageCircle, ShoppingBag,
   Plus, Star, MapPin, ArrowUp
 } from "lucide-react";
 
@@ -829,7 +829,7 @@ function ProductRail({ onQuickView }) {
 
       <div className="overflow-x-auto no-scrollbar">
         <div className="flex gap-6 md:gap-8 px-5 md:px-10 pb-6 md:pb-8">
-          {PRODUCTS.map((p, i) => (
+          {ALL_PRODUCTS.slice(0, 8).map((p, i) => (
             <ProductCard key={p.id} product={p} index={i} onQuickView={onQuickView} />
           ))}
           <div className="shrink-0 w-10 md:w-20" />
@@ -947,7 +947,7 @@ function QuickView({ product, onClose }) {
 
             <div className="px-6 py-6 md:px-8 md:py-8">
               <div className="aspect-[3/4] overflow-hidden rounded-[40px_8px_40px_8px] mb-6">
-                <img src={product.image} alt={product.name} className="h-full w-full object-cover" />
+                <img src={product.images ? getWorkspacePath(product.images[0]) : getWorkspacePath(product.image)} alt={product.name} className="h-full w-full object-cover" />
               </div>
 
               <div className="flex flex-wrap gap-2 mb-4">
@@ -961,22 +961,24 @@ function QuickView({ product, onClose }) {
               <p className="mt-5 font-sans text-sm leading-relaxed text-charcoal/70">{product.description}</p>
 
               <div className="mt-6 space-y-3 border-t border-charcoal/10 pt-5">
-                <InfoRow label="Fabric" value={product.fabric} />
+                <InfoRow label="Metal / Material" value={product.fabric} />
                 <InfoRow label="Colour" value={product.color} />
-                <InfoRow label="Sizes" value={product.sizes.join(" · ")} />
+                <InfoRow label="Sizes" value={Array.isArray(product.sizes) ? product.sizes.join(" · ") : product.sizes} />
+                {product.claspType && <InfoRow label="Clasp Type" value={product.claspType} />}
                 <InfoRow label="Styling note" value={product.styling} />
-                <InfoRow label="Care" value="Dry clean only. Store in a muslin cloth." />
+                <InfoRow label="Care" value={product.care || "Keep away from water, moisture, perfumes, and chemicals."} />
               </div>
 
-              <div className="mt-8 grid grid-cols-2 gap-3">
+              <div className="mt-8 space-y-3">
                 <a href={waLink(waMsg)} target="_blank" rel="noreferrer" data-hover
-                  className="btn-pill btn-primary col-span-2 justify-center">
+                  className="btn-pill btn-primary w-full justify-center">
                   <MessageCircle size={14} strokeWidth={1.5}/> Enquire on WhatsApp
                 </a>
-                <button className="btn-pill btn-outline col-span-1 justify-center" onClick={onClose}>Close</button>
-                <a href={waLink(waMsg)} target="_blank" rel="noreferrer" className="btn-pill btn-outline col-span-1 justify-center">
-                  Save
+                <a href={product.amazonLink || "https://www.amazon.in"} target="_blank" rel="noreferrer" data-hover
+                  className="btn-pill btn-outline w-full justify-center !bg-[#FF9900]/10 !text-charcoal hover:!bg-[#FF9900] hover:!text-white border-[#FF9900]/30 transition-colors">
+                  <ShoppingBag size={14} strokeWidth={1.5}/> Buy on Amazon
                 </a>
+                <button className="btn-pill btn-outline w-full justify-center" onClick={onClose}>Close</button>
               </div>
 
               <div className="mt-8 text-center font-sans text-[10px] tracking-[0.3em] uppercase text-charcoal/40">
@@ -1318,8 +1320,9 @@ function CraftSection() {
 
 /* ------------------------------- New Arrivals ------------------------------ */
 function NewArrivals({ onQuickView }) {
-  const hero = PRODUCTS[3];
-  const rest = [PRODUCTS[4], PRODUCTS[5], PRODUCTS[0]];
+  const hero = ALL_PRODUCTS[5] || ALL_PRODUCTS[0];
+  const rest = ALL_PRODUCTS.slice(6, 9);
+  const heroImg = getWorkspacePath(hero.images ? hero.images[0] : hero.image);
   return (
     <section id="new-arrivals" className="relative py-24 md:py-40 textured-light-bg bg-pearl">
       <div className="mx-auto max-w-[1440px] px-5 md:px-10">
@@ -1344,7 +1347,7 @@ function NewArrivals({ onQuickView }) {
             transition={{ duration: 0.9 }}
             className="col-span-12 md:col-span-6 relative aspect-[4/5] md:aspect-[3/4] rounded-[80px_16px_80px_16px] overflow-hidden bg-champagne/20 cursor-pointer group"
           >
-            <img src={hero.image} alt={hero.name} className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-[1400ms]" />
+            <img src={heroImg} alt={hero.name} className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-[1400ms]" />
             <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
             <div className="absolute inset-x-0 bottom-0 p-6 md:p-10 flex items-end justify-between text-pearl">
               <div>
@@ -1360,30 +1363,33 @@ function NewArrivals({ onQuickView }) {
           </motion.div>
 
           <div className="col-span-12 md:col-span-6 grid grid-cols-2 gap-4 md:gap-6 content-between">
-            {rest.map((p, i) => (
-              <motion.div
-                key={p.id}
-                onClick={() => onQuickView(p)}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.1 + i * 0.1 }}
-                data-cursor="view"
-                className={`relative cursor-pointer group overflow-hidden ${i === 0 ? "aspect-[3/4] rounded-[12px_60px_12px_60px]" : i === 1 ? "aspect-[3/4] rounded-[60px_12px]" : "col-span-2 aspect-[16/9] rounded-[20px]"} bg-champagne/20`}
-              >
-                <img src={p.image} alt={p.name} loading="lazy"
-                  className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-[1400ms]" />
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/55 via-transparent" />
-                <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between text-pearl">
-                  <div>
-                    <div className="font-sans text-[9px] tracking-[0.25em] uppercase opacity-80">{p.category.split("·")[0]}</div>
-                    <div className="font-serif text-lg md:text-2xl leading-tight">{p.name}</div>
+            {rest.map((p, i) => {
+              const pImg = getWorkspacePath(p.images ? p.images[0] : p.image);
+              return (
+                <motion.div
+                  key={p.id}
+                  onClick={() => onQuickView(p)}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.1 + i * 0.1 }}
+                  data-cursor="view"
+                  className={`relative cursor-pointer group overflow-hidden ${i === 0 ? "aspect-[3/4] rounded-[12px_60px_12px_60px]" : i === 1 ? "aspect-[3/4] rounded-[60px_12px]" : "col-span-2 aspect-[16/9] rounded-[20px]"} bg-champagne/20`}
+                >
+                  <img src={pImg} alt={p.name} loading="lazy"
+                    className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-[1400ms]" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/55 via-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between text-pearl">
+                    <div>
+                      <div className="font-sans text-[9px] tracking-[0.25em] uppercase opacity-80">{p.category.split("·")[0]}</div>
+                      <div className="font-serif text-lg md:text-2xl leading-tight">{p.name}</div>
+                    </div>
+                    <div className="flex h-8 w-8 md:h-9 md:w-9 items-center justify-center rounded-full bg-pearl/95 text-charcoal">
+                      <Plus size={12} strokeWidth={1.5} />
+                    </div>
                   </div>
-                  <div className="flex h-8 w-8 md:h-9 md:w-9 items-center justify-center rounded-full bg-pearl/95 text-charcoal">
-                    <Plus size={12} strokeWidth={1.5} />
-                  </div>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -1916,8 +1922,12 @@ function ProductDetailPage({ slug }) {
     window.scrollTo(0, 0);
   }, [slug]);
 
-  // Support resolving from either newly scan photoshoot products or the original products
-  const product = ALL_PRODUCTS.find((p) => p.id === slug) || PRODUCTS.find((p) => p.id === slug);
+  // Support resolving from newly scanned photoshoot products or fallbacks
+  const product = ALL_PRODUCTS.find((p) => 
+    p.id === slug || 
+    p.id === `product-${slug}` || 
+    p.id.replace("product-", "") === slug
+  ) || PRODUCTS.find((p) => p.id === slug);
 
   if (!product) {
     return (
@@ -1937,11 +1947,11 @@ function ProductDetailPage({ slug }) {
   }
 
   // Pre-fill WhatsApp message query
-  const waMsg = `Hi Guthni, I'm interested in *${product.name}*. Could you please share more details?`;
+  const waMsg = `Hi Guthani, I'm interested in *${product.name}*. Could you please share more details?`;
 
   const images = product.images 
     ? product.images.map(img => getWorkspacePath(img)) 
-    : [product.image, product.image2 || product.image];
+    : [getWorkspacePath(product.image)];
 
   return (
     <section className="relative min-h-screen pt-32 pb-24 md:pt-40 md:pb-32 textured-light-bg bg-pearl">
@@ -1997,11 +2007,12 @@ function ProductDetailPage({ slug }) {
             </p>
 
             <div className="space-y-3 border-t border-charcoal/10 pt-6 mb-8">
-              <InfoRow label="Fabric" value={product.fabric} />
+              <InfoRow label="Metal / Material" value={product.fabric} />
               <InfoRow label="Colour" value={product.color} />
-              <InfoRow label="Sizes" value={product.sizes.join(" · ")} />
+              <InfoRow label="Sizes" value={Array.isArray(product.sizes) ? product.sizes.join(" · ") : product.sizes} />
+              {product.claspType && <InfoRow label="Clasp Type" value={product.claspType} />}
               <InfoRow label="Styling note" value={product.styling} />
-              <InfoRow label="Care" value={product.care || "Dry clean only. Store in a zip-lock bag."} />
+              <InfoRow label="Care" value={product.care || "Store in an airtight zip-lock bag. Keep away from water, moisture, perfumes, and chemicals."} />
             </div>
 
             <div className="space-y-3">
@@ -2013,6 +2024,15 @@ function ProductDetailPage({ slug }) {
                 className="btn-pill btn-primary w-full justify-center"
               >
                 <MessageCircle size={14} strokeWidth={1.5}/> Enquire on WhatsApp
+              </a>
+              <a 
+                href={product.amazonLink || "https://www.amazon.in"} 
+                target="_blank" 
+                rel="noreferrer" 
+                data-hover
+                className="btn-pill btn-outline w-full justify-center !bg-[#FF9900]/10 !text-charcoal hover:!bg-[#FF9900] hover:!text-white border-[#FF9900]/30 transition-colors"
+              >
+                <ShoppingBag size={14} strokeWidth={1.5}/> Buy on Amazon
               </a>
               <a 
                 href="/collections" 

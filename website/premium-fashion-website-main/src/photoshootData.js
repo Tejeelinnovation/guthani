@@ -14,9 +14,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 1/IMG_2827.webp",
@@ -38,9 +40,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 2/IMG_2834.webp",
@@ -62,9 +66,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 3/IMG_2842.webp",
@@ -86,9 +92,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 4/IMG_2852.webp",
@@ -111,9 +119,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 5/IMG_2865.webp",
@@ -122,21 +132,23 @@ export const ALL_PRODUCTS = [
   },
   {
     "id": "product-6",
-    "name": "Product 6",
+    "name": "Handmade Jute & Beaded Multi-Strand Statement Necklace",
     "category": "Jewellery · Collection",
     "collectionSlug": [
       "lehengas",
       "new-arrivals"
     ],
     "price": "Enquire for Price",
-    "fabric": "Fine Handcrafted Jewellery",
-    "color": "Silver & Gemstones",
+    "fabric": "Natural jute twine, wooden beads, acrylic beads, and simulated pearls",
+    "color": "Natural jute, hot pink, orange, ivory, and brown",
     "sizes": [
-      "Standard / Adjustable"
+      "18 inches (matinee length)"
     ],
-    "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
-    "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
-    "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "claspType": "Wooden toggle button and loop closure",
+    "description": "A lightweight, handcrafted multi-strand necklace made with natural jute twine, vibrant acrylic beads, glossy ivory faux pearls, and rustic wooden accents. The hand-braided rope construction creates an eco-friendly boho-chic look, while the colourful bead combination adds a playful statement.",
+    "styling": "Pair with cotton dresses, kurtas, sarees, or relaxed bohemian and ethnic outfits. The vibrant pink and orange bead accents make it ideal as a standalone statement accessory for casual, festive, and daytime looks.",
+    "care": "Keep the jute strands completely dry and away from water, humidity, and perfumes. Avoid pulling or stretching the braided strands. Clean gently with a dry, soft cloth and store flat or loosely coiled in a dry place.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 6/IMG_2871.webp",
@@ -159,9 +171,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 7/IMG_2876.webp",
@@ -184,9 +198,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 8/IMG_2862.webp",
@@ -208,9 +224,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 9/IMG_2880.webp",
@@ -232,9 +250,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 10/IMG_2889.webp",
@@ -257,9 +277,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 11/IMG_2901.webp",
@@ -282,9 +304,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 12/IMG_2894.webp",
@@ -307,9 +331,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 13/IMG_2884.webp",
@@ -331,9 +357,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 14/IMG_2932.webp",
@@ -355,9 +383,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 15/IMG_2925.webp",
@@ -381,9 +411,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 16/IMG_2919.webp",
@@ -405,9 +437,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 17/IMG_2910.webp",
@@ -430,9 +464,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 18/IMG_2906.webp",
@@ -455,9 +491,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 19/IMG_2938.webp",
@@ -480,9 +518,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 20/IMG_2956.webp",
@@ -505,9 +545,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 21/IMG_2950.webp",
@@ -530,9 +572,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 22/IMG_2943.webp",
@@ -554,9 +598,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 23/IMG_2996.webp",
@@ -577,9 +623,11 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 24/IMG_3001.webp"
@@ -599,9 +647,59 @@ export const ALL_PRODUCTS = [
     "sizes": [
       "Standard / Adjustable"
     ],
+    "claspType": "Hook-and-chain / Adjustable",
     "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
     "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
     "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
+    "ratio": "portrait",
+    "images": [
+      "new_webp_format_images/Product 25/IMG_3005.webp"
+    ]
+  },
+  {
+    "id": "product-27",
+    "name": "Guthni Handcrafted Pearl & Butterfly Statement Necklace",
+    "category": "Jewellery · Collection",
+    "collectionSlug": [
+      "festive-edit",
+      "new-arrivals"
+    ],
+    "price": "Enquire for Price",
+    "fabric": "Faux pearls, fabric ornaments, carved charms, and oxidized dark metal alloy chains",
+    "color": "Off-white, white, and oxidized dark metal",
+    "sizes": [
+      "Adjustable / standard statement necklace length"
+    ],
+    "claspType": "Hook-and-loop closure with adjustable chain detailing",
+    "description": "Handcrafted statement necklace featuring a clean strand of glossy off-white faux pearls, accented with dark oxidized metal chains, delicate white fabric elements, carved butterfly charms, and dangling feature pearls. A distinctive mixed-media design combining traditional beadwork with contemporary artisanal detailing.",
+    "styling": "Wear it as a statement piece with sarees, kurtas, dresses, or minimalist solid-colour outfits. The pearl-and-chain combination works well for festive occasions, evening wear, and contemporary ethnic styling.",
+    "care": "Handle the fabric and pearl elements gently. Keep away from water, moisture, perfumes, and chemicals. Store flat or in a separate soft pouch to prevent the metal chains from tangling and the fabric accents from getting damaged.",
+    "amazonLink": "https://www.amazon.in",
+    "ratio": "portrait",
+    "images": [
+      "new_webp_format_images/Product 24/IMG_3001.webp"
+    ]
+  },
+  {
+    "id": "product-28",
+    "name": "Guthni Handcrafted Mixed-Media Statement Necklace",
+    "category": "Jewellery · Collection",
+    "collectionSlug": [
+      "festive-edit",
+      "new-arrivals"
+    ],
+    "price": "Enquire for Price",
+    "fabric": "Faux pearls, natural wood beads, enamel, and oxidized dark metal alloy chain",
+    "color": "Ivory, natural wood brown, dark metal, and floral enamel accents",
+    "sizes": [
+      "Standard statement necklace length with extension chain"
+    ],
+    "claspType": "Adjustable hook-and-chain closure",
+    "description": "An asymmetric handcrafted necklace combining classic uniform faux pearls with earthy wooden beads, dark metal chain links, and a delicate hand-painted enamel floral charm. Its contemporary mixed-media design blends elegant pearl detailing with rustic and artisanal elements for a distinctive statement look.",
+    "styling": "Style with sarees, kurtas, dresses, or contemporary ethnic outfits for an asymmetric statement look. The combination of pearls, wood, and dark metal makes it suitable for casual, festive, ethnic, and party wear.",
+    "care": "Keep away from water, moisture, perfumes, and harsh chemicals. Wipe the pearls, wooden beads, and metal components gently with a soft, dry cloth after use. Store separately to prevent the dark metal chain from scratching or tangling with other jewellery.",
+    "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 25/IMG_3005.webp"
