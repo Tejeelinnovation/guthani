@@ -79,6 +79,7 @@ const fallbackScript = `<script>
   document.addEventListener("error", function (event) {
     const img = event.target;
     if (!img || img.tagName !== "IMG" || img.dataset.imageFallbackApplied === "1") return;
+    if (img.alt === "GUTHANI" || (img.src && (img.src.includes("logo") || img.src.includes("svg")))) return;
     img.dataset.imageFallbackApplied = "1";
     img.src = fallback;
   }, true);
