@@ -259,8 +259,8 @@ export const SOCIAL = [
 
 export const HOW_TO_ORDER = [
   { n: "01", title: "Discover", body: "Find the handcrafted bead and fabric jewellery piece that speaks to your style." },
-  { n: "02", title: "Enquire", body: "Message us directly on WhatsApp — no carts, no friction." },
-  { n: "03", title: "Personalise", body: "Confirm size, length, and bespoke styling." },
+  { n: "02", title: "Enquire or Buy", body: "Message us directly on WhatsApp for a personalised purchase, or shop directly on Amazon for available pieces." },
+  { n: "03", title: "Personalise", body: "Confirm size, length, and bespoke styling when ordering through WhatsApp." },
   { n: "04", title: "Celebrate", body: "Your GUTHANI statement jewellery is handcrafted and delivered to you." },
 ];
 
