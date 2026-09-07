@@ -31,7 +31,7 @@ for (let i = 1; i <= 4; i++) {
   }
 }
 
-const logoFiles = ["guthani-logo-burgundy.png", "guthani-logo-cream.png", "guthani-icon.svg"];
+const logoFiles = ["guthani-logo-burgundy.png", "guthani-logo-cream.png", "guthani-logo-burgundy.svg", "guthani-logo-cream.svg", "guthani-icon.svg"];
 for (const logoName of logoFiles) {
   const srcFile = path.join(websiteDir, logoName);
   const destFile = path.join(websiteDest, logoName);
