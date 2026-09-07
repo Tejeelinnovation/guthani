@@ -1831,6 +1831,59 @@ function CollectionDetailPage({ slug, onQuickView }) {
   );
 }
 
+function ProductImageGallery({ images, productName }) {
+  const [activeIdx, setActiveIdx] = useState(0);
+  const scrollRef = useRef(null);
+
+  const handleScroll = () => {
+    if (!scrollRef.current) return;
+    const { scrollLeft, clientWidth } = scrollRef.current;
+    if (clientWidth > 0) {
+      const idx = Math.round(scrollLeft / clientWidth);
+      setActiveIdx(idx);
+    }
+  };
+
+  return (
+    <div className="md:col-span-7">
+      {/* Mobile Swipeable Gallery + Desktop Stacked Gallery */}
+      <div 
+        ref={scrollRef}
+        onScroll={handleScroll}
+        className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar gap-4 md:block md:space-y-6"
+      >
+        {images.map((img, i) => (
+          <div 
+            key={i} 
+            className="shrink-0 w-full snap-center overflow-hidden rounded-3xl bg-champagne/20 aspect-[3/4] md:w-auto md:shrink"
+          >
+            <img 
+              src={img} 
+              alt={`${productName} detail view ${i + 1}`} 
+              loading={i === 0 ? "eager" : "lazy"}
+              className="h-full w-full object-cover"
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Mobile Swipe Pagination Dots */}
+      {images.length > 1 && (
+        <div className="flex items-center justify-center gap-2 mt-4 md:hidden">
+          {images.map((_, i) => (
+            <div 
+              key={i} 
+              className={`h-2 rounded-full transition-all ${
+                i === activeIdx ? "w-6 bg-burgundy" : "w-2 bg-charcoal/20"
+              }`} 
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 /* --------------------------- Product Detail Page --------------------------- */
 function ProductDetailPage({ slug }) {
   useEffect(() => {
@@ -1881,22 +1934,8 @@ function ProductDetailPage({ slug }) {
         </a>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-16">
-          {/* Left: Images list */}
-          <div className="md:col-span-7 space-y-6">
-            {images.map((img, i) => (
-              <div 
-                key={i} 
-                className="overflow-hidden rounded-3xl bg-champagne/20 aspect-[3/4]"
-              >
-                <img 
-                  src={img} 
-                  alt={`${product.name} detail view ${i + 1}`} 
-                  loading={i === 0 ? "eager" : "lazy"}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
+          {/* Left: Mobile swipeable / Desktop stacked image gallery */}
+          <ProductImageGallery images={images} productName={product.name} />
 
           {/* Right: Sticky Details */}
           <div className="md:col-span-5 md:sticky md:top-28 md:self-start">
