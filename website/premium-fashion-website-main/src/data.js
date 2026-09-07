@@ -4,8 +4,10 @@
 export const BRAND = {
   name: "GUTHANI",
   tagline: "A Modern Indian Jewellery Edit",
-  whatsapp: "919999999999",
-  instagram: "guthani",
+  whatsapp: "918320016364",
+  whatsappDisplay: "+91 8320016364",
+  email: "guthniverse@gmail.com",
+  instagram: "https://www.instagram.com/guthniverse?stkn=MWsxN3U0MWFubzVyMg==",
   location: "Indore, India",
 };
 
@@ -14,7 +16,7 @@ export const NAV_LINKS = [
   { label: "New Arrivals", href: "#new-arrivals" },
   { label: "Festive Edit", href: "#festive" },
   { label: "Lookbook", href: "#lookbook" },
-  { label: "Instagram", href: "#instagram" },
+  { label: "Instagram", href: "https://www.instagram.com/guthniverse?stkn=MWsxN3U0MWFubzVyMg==" },
 ];
 
 export const COLLECTIONS = [

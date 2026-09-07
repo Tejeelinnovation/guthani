@@ -143,17 +143,17 @@ function Intro({ onComplete }) {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-          className="font-display text-5xl md:text-7xl tracking-[0.15em] text-charcoal"
+          className="flex justify-center"
         >
-          GUTHANI
+          <img src={getWorkspacePath("website/guthani-logo-burgundy.png")} alt="GUTHANI" className="h-16 md:h-24 w-auto mx-auto object-contain" />
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-4 font-sans text-[10px] md:text-xs tracking-[0.5em] uppercase text-gold-dark"
+          className="mt-4 font-sans text-[10px] md:text-xs tracking-[0.5em] uppercase text-gold-dark text-center"
         >
-          A Modern Indian Edit
+          A Modern Indian Jewellery Edit
         </motion.p>
         <motion.div
           initial={{ scaleX: 0 }}
@@ -263,9 +263,12 @@ function ScrollProgress() {
 function Navbar({ onMenuToggle }) {
   const { scrollY } = useScroll();
   const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
-    const unsub = scrollY.on("change", (v) => setScrolled(v > 40));
-    return () => unsub();
+    return scrollY.onChange((latest) => {
+      if (latest > 50) setScrolled(true);
+      else setScrolled(false);
+    });
   }, [scrollY]);
 
   return (
@@ -282,7 +285,7 @@ function Navbar({ onMenuToggle }) {
           className={`flex items-center justify-between ${scrolled ? "glass rounded-full px-5 md:px-8 py-3 shadow-[0_10px_40px_-20px_rgba(26,23,20,0.25)]" : "px-0 py-0"}`}
         >
           <a href="#top" onClick={(e) => handleAnchorClick(e, "#top")} data-hover className="flex items-center gap-2">
-            <span className="font-display text-lg md:text-xl tracking-[0.22em] text-charcoal">GUTHANI</span>
+            <img src={getWorkspacePath("website/guthani-logo-burgundy.png")} alt="GUTHANI" className="h-7 md:h-9 w-auto object-contain" />
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -339,7 +342,7 @@ function MobileMenu({ open, onClose }) {
           <div className="absolute inset-0 grain opacity-60" />
           <div className="relative h-full flex flex-col px-6 pt-16 pb-8">
             <div className="flex items-center justify-between">
-              <span className="font-display text-2xl tracking-[0.2em]">GUTHANI</span>
+              <img src={getWorkspacePath("website/guthani-logo-burgundy.png")} alt="GUTHANI" className="h-8 w-auto object-contain" />
               <button onClick={onClose} data-hover
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-charcoal/15">
                 <X size={16} strokeWidth={1.5} />
@@ -1328,7 +1331,7 @@ function Instagram() {
             </h2>
           </div>
           <div className="md:col-span-5 flex md:justify-end">
-            <a href="https://instagram.com/guthani" target="_blank" rel="noreferrer" data-hover
+            <a href={BRAND.instagram} target="_blank" rel="noreferrer" data-hover
               className="btn-pill btn-primary">
               <InstagramIcon size={14} strokeWidth={1.5} /> Follow on Instagram
             </a>
@@ -1350,7 +1353,7 @@ function Instagram() {
             return (
               <motion.a
                 key={i}
-                href="https://instagram.com/guthani" target="_blank" rel="noreferrer"
+                href={BRAND.instagram} target="_blank" rel="noreferrer"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: i * 0.05 }}
@@ -1574,27 +1577,36 @@ function Footer() {
       <div className="mx-auto max-w-[1440px] px-5 md:px-10">
         <div className="text-center mb-14 md:mb-20">
           <div className="hairline mb-10" />
-          <motion.h2
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="font-display text-[16vw] md:text-[14vw] leading-[0.85] tracking-[0.02em] text-pearl"
+            className="flex justify-center my-4"
           >
-            GUTHANI
-          </motion.h2>
+            <img 
+              src={getWorkspacePath("website/guthani-logo-cream.png")} 
+              alt="GUTHANI" 
+              className="h-24 md:h-44 max-w-[85vw] w-auto object-contain" 
+            />
+          </motion.div>
           <div className="hairline mt-10" />
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-10 pb-14 border-b border-pearl/10">
           <FooterCol title="Collections" items={[
-            ["Sarees", "/collections/sarees"], ["Lehengas", "/collections/lehengas"], ["Suits", "/collections/suits"],
-            ["Kurta Sets", "/collections/kurta-sets"], ["Festive Edit", "/collections/festive-edit"]
+            ["Statement Necklaces", "/collections/sarees"], 
+            ["Jute & Beaded Edits", "/collections/lehengas"], 
+            ["Pearl & Metal Elegance", "/collections/suits"],
+            ["Artisanal Chokers", "/collections/kurta-sets"], 
+            ["Festive Jewellery Edit", "/collections/festive-edit"]
           ]} />
           <FooterCol title="Discover" items={[
-            ["New Arrivals", "/#new-arrivals"], ["Lookbook", "/#lookbook"], ["Our Story", "/#story"], ["The Edit", "/collections"]
+            ["New Arrivals", "/#new-arrivals"], ["Lookbook", "/#lookbook"], ["The Edit", "/collections"]
           ]} />
           <FooterCol title="Connect" items={[
-            ["Instagram", "https://instagram.com/guthani"], ["WhatsApp", waLink("Hi!")], ["Contact", "#"]
+            ["Instagram", BRAND.instagram], 
+            ["WhatsApp", waLink("Hi Guthani!")], 
+            ["Email Us", `mailto:${BRAND.email}`]
           ]} />
           <FooterCol title="Policies" items={[
             ["Privacy", "#"], ["Shipping", "#"], ["Returns", "#"], ["Care Guide", "#"]
@@ -1603,7 +1615,8 @@ function Footer() {
             <h4 className="font-sans text-[10px] tracking-[0.3em] uppercase text-pearl/60 mb-4">Atelier</h4>
             <p className="font-sans text-sm text-pearl/70 leading-relaxed">
               {BRAND.location}<br/>
-              By appointment only.
+              <a href={`mailto:${BRAND.email}`} className="hover:underline text-pearl/90">{BRAND.email}</a><br/>
+              <a href={waLink("Hi Guthani!")} className="hover:underline text-pearl/90">{BRAND.whatsappDisplay}</a>
             </p>
             <div className="mt-4 flex items-center gap-2">
               <div className="h-1.5 w-1.5 rounded-full bg-gold animate-gentle-pulse" />

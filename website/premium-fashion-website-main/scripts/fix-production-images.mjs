@@ -15,7 +15,7 @@ if (fs.existsSync(webpSrc)) {
   console.log("Successfully copied new_webp_format_images to dist/ directory.");
 }
 
-// Copy website model banner images into dist/website/
+// Copy website model banner images and logo assets into dist/website/
 const websiteDir = path.join(workspaceRoot, "website");
 const websiteDest = path.join(distDir, "website");
 if (!fs.existsSync(websiteDest)) {
@@ -30,7 +30,16 @@ for (let i = 1; i <= 4; i++) {
     fs.copyFileSync(srcFile, destFile);
   }
 }
-console.log("Successfully copied homepage model banner images to dist/website/ directory.");
+
+const logoFiles = ["guthani-logo-burgundy.png", "guthani-logo-cream.png"];
+for (const logoName of logoFiles) {
+  const srcFile = path.join(websiteDir, logoName);
+  const destFile = path.join(websiteDest, logoName);
+  if (fs.existsSync(srcFile)) {
+    fs.copyFileSync(srcFile, destFile);
+  }
+}
+console.log("Successfully copied homepage model banner images and Guthani logo assets to dist/website/ directory.");
 
 // Post-process HTML file
 const file = new URL("../dist/index.html", import.meta.url);
