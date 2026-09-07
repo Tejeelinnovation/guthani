@@ -39,16 +39,18 @@ export const getWorkspacePath = (subPath) => {
     return subPath;
   }
   const isDev = import.meta.env.DEV;
+  // Clean leading slashes if present
+  const cleanPath = subPath.replace(/^\/+/, "");
   // Correctly handle spaces in folder names and image paths
-  const encodedPath = subPath.split('/').map(segment => encodeURIComponent(segment)).join('/');
+  const encodedPath = cleanPath.split('/').map(segment => encodeURIComponent(segment)).join('/');
   
   if (isDev) {
     // In Vite dev mode, files outside project root must go through /@fs/ prefix with absolute path
     return `/@fs/Users/dhruv/arrent/guthani/${encodedPath}`;
   }
   
-  // In production build, assets are bundled directly inside dist
-  return `./${encodedPath}`;
+  // In production build, assets are served from web root /
+  return `/${encodedPath}`;
 };
 
 // Resolve the 4 homepage visual model assets
