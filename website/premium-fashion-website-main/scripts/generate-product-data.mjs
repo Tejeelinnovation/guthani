@@ -64,6 +64,11 @@ try {
     const productNum = getProductNumber(dirName);
     const productPath = path.join(photoshootDir, dirName);
     
+    // Custom explicit image order per product to prioritize product shots over model shots
+    const PRODUCT_IMAGE_ORDER = {
+      6: ["IMG_2873.webp", "IMG_2874.webp", "IMG_2871.webp", "IMG_2872.webp"],
+    };
+
     // Read files in product folder
     const files = fs.readdirSync(productPath)
       .filter(fileName => {
@@ -71,7 +76,17 @@ try {
         const ext = path.extname(fileName).toLowerCase();
         return [".jpg", ".jpeg", ".png", ".webp"].includes(ext);
       })
-      .sort();
+      .sort((a, b) => {
+        const order = PRODUCT_IMAGE_ORDER[productNum];
+        if (order) {
+          const idxA = order.indexOf(a);
+          const idxB = order.indexOf(b);
+          if (idxA !== -1 && idxB !== -1) return idxA - idxB;
+          if (idxA !== -1) return -1;
+          if (idxB !== -1) return 1;
+        }
+        return a.localeCompare(b);
+      });
 
     const imagePaths = files.map(file => `${photoshootDirName}/${dirName}/${file}`);
 

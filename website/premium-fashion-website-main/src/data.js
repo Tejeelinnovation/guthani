@@ -109,13 +109,13 @@ export const PRODUCTS = [
     claspType: "Wooden toggle button and loop closure",
     description: "A lightweight, handcrafted multi-strand necklace made with natural jute twine, vibrant acrylic beads, glossy ivory faux pearls, and rustic wooden accents.",
     styling: "Pair with cotton dresses, kurtas, sarees, or relaxed bohemian and ethnic outfits.",
-    image: "new_webp_format_images/Product 6/IMG_2871.webp",
-    image2: "new_webp_format_images/Product 6/IMG_2872.webp",
+    image: "new_webp_format_images/Product 6/IMG_2873.webp",
+    image2: "new_webp_format_images/Product 6/IMG_2874.webp",
     images: [
-      "new_webp_format_images/Product 6/IMG_2871.webp",
-      "new_webp_format_images/Product 6/IMG_2872.webp",
       "new_webp_format_images/Product 6/IMG_2873.webp",
-      "new_webp_format_images/Product 6/IMG_2874.webp"
+      "new_webp_format_images/Product 6/IMG_2874.webp",
+      "new_webp_format_images/Product 6/IMG_2871.webp",
+      "new_webp_format_images/Product 6/IMG_2872.webp"
     ],
     ratio: "portrait",
   },

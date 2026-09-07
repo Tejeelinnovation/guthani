@@ -151,10 +151,10 @@ export const ALL_PRODUCTS = [
     "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
-      "new_webp_format_images/Product 6/IMG_2871.webp",
-      "new_webp_format_images/Product 6/IMG_2872.webp",
       "new_webp_format_images/Product 6/IMG_2873.webp",
-      "new_webp_format_images/Product 6/IMG_2874.webp"
+      "new_webp_format_images/Product 6/IMG_2874.webp",
+      "new_webp_format_images/Product 6/IMG_2871.webp",
+      "new_webp_format_images/Product 6/IMG_2872.webp"
     ]
   },
   {
