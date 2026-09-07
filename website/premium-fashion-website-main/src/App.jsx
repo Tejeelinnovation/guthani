@@ -474,8 +474,8 @@ function Hero() {
               transition={{ duration: 1, delay: 2.3 }}
               className="mt-6 md:mt-8 max-w-md font-sans text-sm md:text-base leading-relaxed text-charcoal/70"
             >
-              Curated Indian silhouettes crafted for celebrations worth remembering.
-              Handwoven silk. Soft zari. Modern lines.
+              Handcrafted bead and fabric jewellery crafted for celebrations worth remembering.
+              Natural jute. Glossy pearls. Oxidized accents.
             </motion.p>
 
             <motion.div
@@ -499,11 +499,6 @@ function Hero() {
               transition={{ duration: 1, delay: 2.7 }}
               className="mt-10 md:mt-14 flex items-center gap-8"
             >
-              <div>
-                <div className="font-display text-2xl text-charcoal">24</div>
-                <div className="font-sans text-[9px] tracking-[0.25em] uppercase text-charcoal/50">New Pieces</div>
-              </div>
-              <div className="h-8 w-px bg-charcoal/15" />
               <div>
                 <div className="font-display text-2xl text-charcoal">06</div>
                 <div className="font-sans text-[9px] tracking-[0.25em] uppercase text-charcoal/50">Collections</div>
@@ -547,7 +542,7 @@ function Hero() {
                 <div className="h-1.5 w-1.5 rounded-full bg-burgundy animate-gentle-pulse" />
                 <div>
                   <div className="font-sans text-[9px] md:text-[10px] tracking-[0.22em] uppercase text-charcoal/70">Festive 2026</div>
-                  <div className="font-display text-[13px] md:text-sm tracking-wider text-charcoal">The Isha Saree</div>
+                  <div className="font-display text-[13px] md:text-sm tracking-wider text-charcoal">Heritage Edit</div>
                 </div>
               </motion.div>
 
@@ -571,7 +566,7 @@ function Hero() {
             Scroll to explore
           </div>
           <div className="hidden md:flex items-center gap-8 font-sans text-[10px] tracking-[0.3em] uppercase text-charcoal/50">
-            <span>Couture · Festive · Ready-to-Wear</span>
+            <span>Handcrafted Beads · Pearls & Jute · Festive Jewellery</span>
           </div>
         </motion.div>
       </motion.div>
@@ -751,7 +746,7 @@ function FeaturedCampaign() {
               that become <span className="font-display">memories.</span>
             </h2>
             <p className="mt-6 md:mt-8 font-sans text-sm md:text-base text-pearl/70 leading-relaxed max-w-md">
-              Our flagship edit brings together heritage silk, hand zardozi and contemporary silhouettes — for the weddings,
+              Our flagship edit brings together handcrafted bead and fabric jewellery, natural jute twine, and glossy pearls — for the weddings,
               the pujas and the long nights you'll want to remember.
             </p>
 
@@ -766,7 +761,7 @@ function FeaturedCampaign() {
             </div>
 
             <div className="mt-14 grid grid-cols-3 gap-6 border-t border-pearl/15 pt-8">
-              {[["24", "Pieces"], ["06", "Silhouettes"], ["01", "Atelier"]].map(([n, l]) => (
+              {[["24", "Pieces"], ["06", "Collections"], ["01", "Atelier"]].map(([n, l]) => (
                 <div key={l}>
                   <div className="font-display text-3xl md:text-4xl text-gold">{n}</div>
                   <div className="mt-1 font-sans text-[9px] tracking-[0.3em] uppercase text-pearl/60">{l}</div>
@@ -1044,87 +1039,7 @@ function BrandPhilosophy() {
   );
 }
 
-/* ------------------------------ Fashion Story ------------------------------ */
-function FashionStory() {
-  const panels = [
-    { n: "01", label: "Craft", src: "https://images.unsplash.com/photo-1609709295948-17d77cb2a69b?w=1200&q=85" },
-    { n: "02", label: "Silhouette", src: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=1200&q=85" },
-    { n: "03", label: "Celebration", src: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1200&q=85" },
-    { n: "04", label: "Modern India", src: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=1200&q=85" },
-  ];
-  return (
-    <section className="relative py-24 md:py-40 textured-light-bg bg-pearl">
-      <div className="mx-auto max-w-[1440px] px-5 md:px-10">
-        <div className="mb-12 md:mb-20 max-w-3xl">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="h-px w-8 bg-gold" />
-            <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-gold-dark">03 — Story</span>
-          </div>
-          <h2 className="font-serif text-5xl md:text-7xl leading-[0.95]">
-            Four chapters, <br/><span className="italic font-light">one woman.</span>
-          </h2>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
-          <div className="md:col-span-5 md:sticky md:top-28 md:self-start">
-            <div className="aspect-[3/4] rounded-[80px_20px] overflow-hidden bg-champagne/30">
-              <StoryCarousel panels={panels} />
-            </div>
-          </div>
-          <div className="md:col-span-7 space-y-4 md:space-y-0 md:py-10">
-            {panels.map((p, i) => (
-              <motion.div
-                key={p.n}
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.8, delay: i * 0.08 }}
-                className="py-8 md:py-14 border-b border-charcoal/10 flex items-baseline justify-between gap-6"
-              >
-                <div className="flex items-baseline gap-4 md:gap-8">
-                  <span className="font-display text-sm text-gold-dark">{p.n}</span>
-                  <h3 className="font-serif text-3xl md:text-5xl text-charcoal">{p.label}</h3>
-                </div>
-                <ArrowRight size={18} strokeWidth={1.2} className="text-charcoal/40 shrink-0" />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function StoryCarousel({ panels }) {
-  const [active, setActive] = useState(0);
-  useEffect(() => {
-    const t = setInterval(() => setActive((a) => (a + 1) % panels.length), 3500);
-    return () => clearInterval(t);
-  }, [panels.length]);
-  return (
-    <div className="relative h-full w-full">
-      {panels.map((p, i) => (
-        <motion.div
-          key={p.n}
-          initial={false}
-          animate={{ opacity: active === i ? 1 : 0, scale: active === i ? 1 : 1.04 }}
-          transition={{ duration: 1, ease: [0.22,1,0.36,1] }}
-          className="absolute inset-0"
-        >
-          <img src={p.src} alt={p.label} className="h-full w-full object-cover" loading="lazy" />
-        </motion.div>
-      ))}
-      <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between text-pearl">
-        <div className="font-display text-xl drop-shadow">{panels[active].label}</div>
-        <div className="flex gap-1.5">
-          {panels.map((_, i) => (
-            <div key={i} className={`h-1 w-6 rounded-full transition-all ${i === active ? "bg-pearl" : "bg-pearl/40"}`} />
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
 
 /* --------------------------- Lookbook / Art of Dressing -------------------- */
 function Lookbook() {
@@ -1140,11 +1055,11 @@ function Lookbook() {
             <h2 className="font-serif text-5xl md:text-8xl leading-[0.95] font-light">
               The Art <br/>
               <span className="italic">of Festive</span> <br/>
-              <span className="font-display">Dressing.</span>
+              <span className="font-display">Jewellery.</span>
             </h2>
           </div>
           <p className="md:max-w-sm font-sans text-sm text-pearl/60 leading-relaxed">
-            A cinematic diary of our campaign — from the first drape to the final shot.
+            A cinematic diary of our campaign — from the first handcrafted bead to the final shot.
           </p>
         </div>
 
@@ -1287,8 +1202,8 @@ function CraftSection() {
           </div>
           <div className="md:col-span-5 md:col-start-8 self-end">
             <p className="font-sans text-sm text-pearl/65 leading-relaxed">
-              Every stitch tells a story of hands that have spent decades perfecting their art — zari from Surat,
-              silk from Kanchipuram, chikankari from Lucknow.
+              Every bead tells a story of hands that have spent decades perfecting their art — natural jute twine,
+              glossy pearls, handcrafted fabric accents, and carved charms.
             </p>
           </div>
         </div>
@@ -2118,7 +2033,6 @@ export default function App() {
             <FeaturedCampaign />
             <ProductRail onQuickView={handleProductClick} />
             <BrandPhilosophy />
-            <FashionStory />
             <Lookbook />
             <FashionPortal />
             <CraftSection />
