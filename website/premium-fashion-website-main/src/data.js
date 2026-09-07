@@ -8,7 +8,7 @@ export const BRAND = {
   whatsappDisplay: "+91 8320016364",
   email: "guthniverse@gmail.com",
   instagram: "https://www.instagram.com/guthniverse?stkn=MWsxN3U0MWFubzVyMg==",
-  location: "Indore, India",
+  location: "Ahmedabad, India",
 };
 
 export const NAV_LINKS = [
@@ -204,7 +204,7 @@ export const PRODUCTS = [
 export const LOOKBOOK = [
   { image: "new_webp_format_images/Product 1/IMG_2827.webp", caption: "Product 1 — Fine Jewellery, Festive 2026" },
   { image: "new_webp_format_images/Product 3/IMG_2842.webp", caption: "Product 3 — Handcrafted Edit" },
-  { image: "new_webp_format_images/Product 6/IMG_2871.webp", caption: "Product 6 — Campaign 01 / Indore" },
+  { image: "new_webp_format_images/Product 6/IMG_2871.webp", caption: "Product 6 — Campaign 01 / Ahmedabad" },
   { image: "new_webp_format_images/Product 11/IMG_2901.webp", caption: "Product 11 — Signature Piece" },
   { image: "new_webp_format_images/Product 16/IMG_2919.webp", caption: "Product 16 — The Festive Edit" },
   { image: "new_webp_format_images/Product 21/IMG_2950.webp", caption: "Product 21 — Portrait / Editorial" },
@@ -249,7 +249,7 @@ export const TESTIMONIALS = [
 export const SOCIAL = [
   { type: "image", src: "new_webp_format_images/Product 1/IMG_2829.webp", caption: "Festive Edit · Behind the scenes" },
   { type: "image", src: "new_webp_format_images/Product 5/IMG_2865.webp", caption: "Guthani Product 5" },
-  { type: "reel", src: "new_webp_format_images/Product 8/IMG_2862.webp", caption: "Campaign film — Indore" },
+  { type: "reel", src: "new_webp_format_images/Product 8/IMG_2862.webp", caption: "Campaign film — Ahmedabad" },
   { type: "image", src: "new_webp_format_images/Product 13/IMG_2884.webp", caption: "Signature Jewellery" },
   { type: "image", src: "new_webp_format_images/Product 18/IMG_2906.webp", caption: "Customer styling" },
   { type: "reel", src: "new_webp_format_images/Product 20/IMG_2956.webp", caption: "Festive 2026" },

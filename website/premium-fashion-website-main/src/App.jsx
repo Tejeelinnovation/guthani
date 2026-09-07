@@ -379,7 +379,7 @@ function MobileMenu({ open, onClose }) {
                 <MessageCircle size={14} strokeWidth={1.5}/> WhatsApp Concierge
               </a>
               <div className="flex items-center justify-between font-sans text-[10px] tracking-[0.3em] uppercase text-charcoal/60">
-                <span>Indore · India</span>
+                <span>Ahmedabad · India</span>
                 <span>@guthani</span>
               </div>
             </div>
@@ -554,7 +554,7 @@ function Hero() {
 
               {/* Vertical text */}
               <div className="hidden md:flex absolute -right-14 top-12 vertical-text font-sans text-[10px] tracking-[0.5em] uppercase text-gold-dark gap-3">
-                <span>GUTHANI</span><span>·</span><span>INDORE</span>
+                <span>GUTHANI</span><span>·</span><span>AHMEDABAD</span>
               </div>
             </div>
           </motion.div>
@@ -790,7 +790,7 @@ function FeaturedCampaign() {
                     loading="lazy" className="h-full w-full object-cover" />
                 </div>
                 <div className="hidden md:flex items-center gap-2 font-sans text-[9px] tracking-[0.3em] uppercase text-pearl/60">
-                  <MapPin size={10} strokeWidth={1.5} /> Indore · India
+                  <MapPin size={10} strokeWidth={1.5} /> Ahmedabad · India
                 </div>
               </div>
             </div>
@@ -1082,7 +1082,7 @@ function Lookbook() {
           </div>
           <div className="hidden md:block col-span-2 pt-8">
             <div className="vertical-text font-sans text-[10px] tracking-[0.5em] uppercase text-pearl/60">
-              GUTHANI · CAMPAIGN 01 · INDORE
+              GUTHANI · CAMPAIGN 01 · AHMEDABAD
             </div>
           </div>
 
