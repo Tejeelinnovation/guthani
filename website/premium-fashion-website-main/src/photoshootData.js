@@ -658,6 +658,31 @@ export const ALL_PRODUCTS = [
     ]
   },
   {
+    "id": "product-26",
+    "name": "Product 26",
+    "category": "Jewellery · Collection",
+    "collectionSlug": [
+      "festive-edit",
+      "new-arrivals"
+    ],
+    "price": "Enquire for Price",
+    "fabric": "Fine Handcrafted Jewellery",
+    "color": "Silver & Gemstones",
+    "sizes": [
+      "Standard / Adjustable"
+    ],
+    "claspType": "Hook-and-chain / Adjustable",
+    "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
+    "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
+    "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
+    "ratio": "portrait",
+    "images": [
+      "new_webp_format_images/Product 26/H-005.jpg.jpeg",
+      "new_webp_format_images/Product 26/H-008.jpg.jpeg"
+    ]
+  },
+  {
     "id": "product-27",
     "name": "Guthni Handcrafted Pearl & Butterfly Statement Necklace",
     "category": "Jewellery · Collection",
@@ -678,7 +703,7 @@ export const ALL_PRODUCTS = [
     "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
-      "new_webp_format_images/Product 24/IMG_3001.webp"
+      "new_webp_format_images/Product 27/H-006.jpg.jpeg"
     ]
   },
   {
@@ -702,7 +727,7 @@ export const ALL_PRODUCTS = [
     "amazonLink": "https://www.amazon.in",
     "ratio": "portrait",
     "images": [
-      "new_webp_format_images/Product 25/IMG_3005.webp"
+      "new_webp_format_images/Product 28/H-007.jpg.jpeg"
     ]
   }
 ];
