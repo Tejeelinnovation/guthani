@@ -27,6 +27,17 @@ const CUSTOM_DATA = {
     care: "Keep the jute strands completely dry and away from water, humidity, and perfumes. Avoid pulling or stretching the braided strands. Clean gently with a dry, soft cloth and store flat or loosely coiled in a dry place.",
     amazonLink: "https://www.amazon.in"
   },
+  24: {
+    name: "Guthni Handmade Round Woven Sling Bag with Pink Bow",
+    description: "Add a touch of charm to your wardrobe with this beautiful handmade round woven handbag. Designed with a distinctive circular shape and an attractive pink bow, this bag combines traditional handcrafted appeal with a trendy contemporary look. The woven texture gives it a natural and elegant appearance, while the decorative bow adds a playful and stylish finish. Its convenient handle makes it comfortable to carry on your shoulder or by hand.",
+    fabric: "Natural-fiber woven material, fabric bow accent",
+    color: "Natural fiber & Pink bow",
+    sizes: ["Standard Round Sling Bag"],
+    claspType: "Shoulder strap / Handheld",
+    styling: "Style it with casual cotton dresses, kurtas, or everyday western outfits. Ideal for casual outings, parties, vacations, shopping, and daytime events.",
+    care: "Keep dry. Spot clean gently with a soft dry cloth. Avoid exposure to water, rain, and direct heat to protect the natural-fiber weave and fabric bow.",
+    amazonLink: "https://www.amazon.in/dp/B0HK7KMY51"
+  },
   27: {
     name: "Guthni Handcrafted Pearl & Butterfly Statement Necklace",
     description: "Handcrafted statement necklace featuring a clean strand of glossy off-white faux pearls, accented with dark oxidized metal chains, delicate white fabric elements, carved butterfly charms, and dangling feature pearls. A distinctive mixed-media design combining traditional beadwork with contemporary artisanal detailing.",

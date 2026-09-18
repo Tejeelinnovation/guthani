@@ -611,23 +611,23 @@ export const ALL_PRODUCTS = [
   },
   {
     "id": "product-24",
-    "name": "Product 24",
+    "name": "Guthni Handmade Round Woven Sling Bag with Pink Bow",
     "category": "Jewellery · Collection",
     "collectionSlug": [
       "festive-edit",
       "new-arrivals"
     ],
     "price": "Enquire for Price",
-    "fabric": "Fine Handcrafted Jewellery",
-    "color": "Silver & Gemstones",
+    "fabric": "Natural-fiber woven material, fabric bow accent",
+    "color": "Natural fiber & Pink bow",
     "sizes": [
-      "Standard / Adjustable"
+      "Standard Round Sling Bag"
     ],
-    "claspType": "Hook-and-chain / Adjustable",
-    "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
-    "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
-    "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
-    "amazonLink": "https://www.amazon.in",
+    "claspType": "Shoulder strap / Handheld",
+    "description": "Add a touch of charm to your wardrobe with this beautiful handmade round woven handbag. Designed with a distinctive circular shape and an attractive pink bow, this bag combines traditional handcrafted appeal with a trendy contemporary look. The woven texture gives it a natural and elegant appearance, while the decorative bow adds a playful and stylish finish. Its convenient handle makes it comfortable to carry on your shoulder or by hand.",
+    "styling": "Style it with casual cotton dresses, kurtas, or everyday western outfits. Ideal for casual outings, parties, vacations, shopping, and daytime events.",
+    "care": "Keep dry. Spot clean gently with a soft dry cloth. Avoid exposure to water, rain, and direct heat to protect the natural-fiber weave and fabric bow.",
+    "amazonLink": "https://www.amazon.in/dp/B0HK7KMY51",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 24/IMG_3001.webp"
