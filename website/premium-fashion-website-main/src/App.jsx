@@ -93,7 +93,7 @@ export const parsePath = (path) => {
     return { route: "collections" };
   }
 
-  const productDetailMatch = relativePath.match(/^\/products\/([^/]+)$/);
+  const productDetailMatch = relativePath.match(/^\/products?\/([^/]+)$/);
   if (productDetailMatch) {
     return { route: "product-detail", slug: productDetailMatch[1] };
   }
