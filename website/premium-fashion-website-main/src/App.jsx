@@ -885,26 +885,25 @@ function ProductCard({ product, index, onQuickView, isGrid = false }) {
           {String(index + 1).padStart(2, "0")}
         </div>
 
-        {/* Bottom info */}
-        <div className={`absolute inset-x-0 bottom-0 p-5 md:p-6 transition-all duration-500 ${hover ? "translate-y-0 opacity-100" : "translate-y-4 opacity-90"}`}>
-          <div className="flex items-end justify-between gap-3">
-            <div className="text-pearl">
-              <div className="font-sans text-[9px] tracking-[0.25em] uppercase opacity-80">{product.category}</div>
-              <div className="font-serif text-xl md:text-2xl leading-tight drop-shadow">{product.name}</div>
-            </div>
-            <motion.div animate={{ rotate: hover ? 45 : 0 }}
-              transition={{ duration: 0.5, ease: [0.22,1,0.36,1] }}
-              className="flex h-9 w-9 md:h-10 md:w-10 shrink-0 items-center justify-center rounded-full bg-pearl text-charcoal">
-              <Plus size={14} strokeWidth={1.5} />
-            </motion.div>
+        {/* Hover Action Button */}
+        <div className={`absolute right-4 bottom-4 transition-all duration-300 ${hover ? "opacity-100 scale-100" : "opacity-0 scale-90"}`}>
+          <div className="flex h-9 w-9 md:h-10 md:w-10 items-center justify-center rounded-full bg-pearl/90 text-charcoal shadow-md backdrop-blur-sm">
+            <Plus size={14} strokeWidth={1.5} />
           </div>
         </div>
       </div>
 
       {/* Under-card info */}
-      <div className="mt-4 flex items-center justify-between">
-        <div className="font-sans text-[11px] tracking-wider text-charcoal/60">{product.fabric.split(" ").slice(0, 3).join(" ")}</div>
-        <div className="font-display text-sm text-charcoal">{product.price}</div>
+      <div className="mt-4 flex items-center justify-between gap-3 px-1">
+        <div 
+          className="font-serif text-base text-charcoal font-medium truncate max-w-[68%]" 
+          title={product.name}
+        >
+          {product.name.length > 24 ? `${product.name.slice(0, 22).trim()}...` : product.name}
+        </div>
+        <div className="font-sans text-[11px] font-semibold tracking-wider uppercase text-gold-dark shrink-0">
+          View Now
+        </div>
       </div>
     </motion.div>
   );

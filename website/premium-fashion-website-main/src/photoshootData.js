@@ -729,5 +729,245 @@ export const ALL_PRODUCTS = [
     "images": [
       "new_webp_format_images/Product 28/H-007.jpg.jpeg"
     ]
+  },
+  {
+    "id": "product-29",
+    "name": "Product 29",
+    "category": "Jewellery · Collection",
+    "collectionSlug": [
+      "festive-edit",
+      "new-arrivals"
+    ],
+    "price": "Enquire for Price",
+    "fabric": "Fine Handcrafted Jewellery",
+    "color": "Silver & Gemstones",
+    "sizes": [
+      "Standard / Adjustable"
+    ],
+    "claspType": "Hook-and-chain / Adjustable",
+    "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
+    "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
+    "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
+    "ratio": "portrait",
+    "images": [
+      "new_webp_format_images/Product 29/H-007.jpg.jpeg"
+    ]
+  },
+  {
+    "id": "product-30",
+    "name": "Product 30",
+    "category": "Jewellery · Collection",
+    "collectionSlug": [
+      "festive-edit",
+      "new-arrivals"
+    ],
+    "price": "Enquire for Price",
+    "fabric": "Fine Handcrafted Jewellery",
+    "color": "Silver & Gemstones",
+    "sizes": [
+      "Standard / Adjustable"
+    ],
+    "claspType": "Hook-and-chain / Adjustable",
+    "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
+    "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
+    "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
+    "ratio": "portrait",
+    "images": [
+      "new_webp_format_images/Product 30/H-008.jpg.jpeg"
+    ]
+  },
+  {
+    "id": "product-31",
+    "name": "Guthni Handcrafted Royal Blue Crochet & Cowrie Shell Choker",
+    "category": "Jewellery · Collection",
+    "collectionSlug": [
+      "festive-edit",
+      "new-arrivals"
+    ],
+    "price": "Enquire for Price",
+    "fabric": "Light metal rod coated with premium thread, handcrafted royal blue fabric crochet base, genuine cowrie shells, oxidized silver-toned cylindrical pendant, miniature bells, multi-colored seed beads, and vintage-style coin dangles",
+    "color": "Royal Blue, Silver, and Multi-colored seed bead accents",
+    "sizes": [
+      "15 to 16 inches (Adjustable collar fit)"
+    ],
+    "claspType": "Flexible open-ended choker collar",
+    "description": "Handcrafted ethnic bohemian choker necklace featuring an intricate royal blue fabric crochet center panel, tightly wrapped thread-coated light metal rod collar, genuine cowrie shells, traditional oxidized silver-toned cylindrical pendant, miniature bells, multi-colored seed bead strands, and dangling vintage-style coins.",
+    "styling": "Perfectly complements ethnic wear, fusion outfits, sarees, kurtis, and bohemian-inspired casual clothing. Ideal for festive occasions, parties, and cultural events.",
+    "care": "Store in a dry place away from moisture, perfumes, and direct chemicals. Wipe gently with a soft cotton cloth.",
+    "amazonLink": "https://www.amazon.in",
+    "ratio": "portrait",
+    "images": [
+      "new_webp_format_images/Product 31/WhatsApp Image 2026-09-23 at 14.47.37.jpeg"
+    ]
+  },
+  {
+    "id": "product-32",
+    "name": "Guthni Handcrafted Gujarati Mirror Work & Cowrie Shell Choker",
+    "category": "Jewellery · Collection",
+    "collectionSlug": [
+      "festive-edit",
+      "new-arrivals"
+    ],
+    "price": "Enquire for Price",
+    "fabric": "Premium fabric, cotton thread, traditional mirrors, natural cowrie shells, and faux pearls",
+    "color": "Vibrant Orange, Multicolor embroidery, and White pearls & cowrie shells",
+    "sizes": [
+      "15 to 16 inches (Choker / Short necklace fit)"
+    ],
+    "claspType": "Flexible neck wire collar style",
+    "description": "Handcrafted traditional ethnic necklace featuring intricate thread embroidery, classic reflective mirror work, a rich fringe of natural cowrie shells (kaudi), and delicate pearl bead accents attached to a vibrant orange fabric-wrapped flexible neck wire.",
+    "styling": "Perfect for traditional events, ethnic wear, Navratri, festive celebrations, cultural programs, parties, or bohemian-chic daily styling. Effortlessly complements sarees, lehengas, kurtis, and bohemian outfits.",
+    "care": "Store in a dry place away from moisture, perfumes, and harsh chemicals. Handle mirror work and cowrie shells gently.",
+    "amazonLink": "https://www.amazon.in",
+    "ratio": "portrait",
+    "images": [
+      "new_webp_format_images/Product 32/WhatsApp Image 2026-09-23 at 15.13.26.jpeg"
+    ]
+  },
+  {
+    "id": "product-33",
+    "name": "Guthni Handcrafted Oxidized Silver Talisman Collar Necklace",
+    "category": "Jewellery · Collection",
+    "collectionSlug": [
+      "festive-edit",
+      "new-arrivals"
+    ],
+    "price": "Enquire for Price",
+    "fabric": "Oxidized silver-plated metal core collar ring, alloy metal accents, and premium multi-colored glass seed beads",
+    "color": "Oxidized Silver, Multicolored seed beads",
+    "sizes": [
+      "15 to 16 inches (Adjustable open-collar fit)"
+    ],
+    "claspType": "Open-ended flexible collar ring with smooth metallic bead terminals",
+    "description": "Authentic handcrafted ethnic statement collar necklace featuring a traditional oxidized silver-plated central amulet (tabiz) pendant, vintage-style coin charms, and dangling multi-strand multicolored bead fringes attached to a sturdy metal-core collar ring enclosed in soft thread wrapping.",
+    "styling": "Perfect complement for traditional attire, festive wear, boho-chic outfits, and ethnic fusion styles.",
+    "care": "Store in a dry place away from moisture, perfumes, and direct chemicals to maintain the oxidized silver finish.",
+    "amazonLink": "https://www.amazon.in",
+    "ratio": "portrait",
+    "images": [
+      "new_webp_format_images/Product 33/WhatsApp Image 2026-09-23 at 15.25.01.jpeg"
+    ]
+  },
+  {
+    "id": "product-34",
+    "name": "Guthni Handcrafted Green Thread & Cowrie Shell Statement Choker",
+    "category": "Jewellery · Collection",
+    "collectionSlug": [
+      "festive-edit",
+      "new-arrivals"
+    ],
+    "price": "Enquire for Price",
+    "fabric": "Thread-wrapped metal ring, genuine cowrie shells, resin beads, metallic chains, and mini ghungroos (bells)",
+    "color": "Green, White, and Multi-color Ghungroo accents",
+    "sizes": [
+      "15 to 16 inches (Choker length)"
+    ],
+    "claspType": "Slip-on / Flexible Band Style",
+    "description": "Handcrafted statement choker necklace featuring a flexible green yarn-wrapped band adorned with an artistic floral cluster of genuine white cowrie shells, graceful silver-toned chains, smooth green resin beads, and a joyful cluster of multi-colored miniature ghungroos (bells) that create a soft chime.",
+    "styling": "Perfect accessory for traditional wear, Garba nights, ethnic festivals, cultural events, or casual fusion outfits.",
+    "care": "Keep thread and cowrie shells dry. Store in a soft pouch away from moisture and perfumes.",
+    "amazonLink": "https://www.amazon.in",
+    "ratio": "portrait",
+    "images": [
+      "new_webp_format_images/Product 34/WhatsApp Image 2026-09-23 at 15.29.23.jpeg"
+    ]
+  },
+  {
+    "id": "product-35",
+    "name": "Guthni Handcrafted Pink Thread Ring Necklace with Cowries & Ghungroo",
+    "category": "Jewellery · Collection",
+    "collectionSlug": [
+      "festive-edit",
+      "new-arrivals"
+    ],
+    "price": "Enquire for Price",
+    "fabric": "Metal ring with premium pink thread wrapping, alloy chains, natural cowrie shells, thread balls, and metallic ghungroos (bells)",
+    "color": "Vibrant Pink, Silver, and White cowrie shells",
+    "sizes": [
+      "15 to 16 inches (Collar / Choker length)"
+    ],
+    "claspType": "Flexible Open-Ring Style",
+    "description": "Expertly handcrafted ethnic statement necklace featuring a vibrant pink thread-wrapped flexible metal ring, complemented by multi-strand silver-toned chains adorned with natural cowrie shells, fabric thread balls, and traditional ghungroos.",
+    "styling": "Perfect accessory for ethnic wear, Navratri Garba outfits, bohemian fashion, cultural festivals, and casual styling.",
+    "care": "Store in a dry place away from water and humidity. Clean gently with a soft dry cloth.",
+    "amazonLink": "https://www.amazon.in",
+    "ratio": "portrait",
+    "images": [
+      "new_webp_format_images/Product 35/WhatsApp Image 2026-09-23 at 15.35.16.jpeg"
+    ]
+  },
+  {
+    "id": "product-36",
+    "name": "Guthni Handcrafted Yellow Textile & Faux Pearl Collar Necklace with Gold Coins",
+    "category": "Jewellery · Collection",
+    "collectionSlug": [
+      "festive-edit",
+      "new-arrivals"
+    ],
+    "price": "Enquire for Price",
+    "fabric": "Metal core ring, high-quality yellow textile yarn, artificial pearls, and antique-finish metallic coins",
+    "color": "Bright Yellow, Gold, and White Pearls",
+    "sizes": [
+      "15 to 16 inches (Collar length)"
+    ],
+    "claspType": "Open-end flexible collar style with metallic bead finials",
+    "description": "Handcrafted statement necklace featuring a sturdy metal ring meticulously wrapped in bright yellow textile yarn, finished with sleek silver-tone metallic bead ends. The centerpiece showcases an artistic cluster of lustrous faux pearls bordered by intricate, antique-finish gold coins.",
+    "styling": "An ideal accessory for festive celebrations, traditional functions, ethnic gatherings, kurtis, sarees, or fusion wear.",
+    "care": "Keep away from water and harsh chemicals. Store flat in a dry box or soft pouch.",
+    "amazonLink": "https://www.amazon.in",
+    "ratio": "portrait",
+    "images": [
+      "new_webp_format_images/Product 36/WhatsApp Image 2026-09-23 at 15.38.35.jpeg"
+    ]
+  },
+  {
+    "id": "product-37",
+    "name": "Product 37",
+    "category": "Jewellery · Collection",
+    "collectionSlug": [
+      "festive-edit",
+      "new-arrivals"
+    ],
+    "price": "Enquire for Price",
+    "fabric": "Fine Handcrafted Jewellery",
+    "color": "Silver & Gemstones",
+    "sizes": [
+      "Standard / Adjustable"
+    ],
+    "claspType": "Hook-and-chain / Adjustable",
+    "description": "A premium handcrafted piece from the Guthni Collection. Meticulously designed with traditional motifs and modern craftsmanship.",
+    "styling": "Pair with ethnic wear or contemporary outfits for an elegant style statement.",
+    "care": "Store in an airtight zip-lock bag. Keep away from water, perfumes, and other chemicals.",
+    "amazonLink": "https://www.amazon.in",
+    "ratio": "portrait",
+    "images": [
+      "new_webp_format_images/Product 37/WhatsApp Image 2026-09-21 at 15.33.07.jpeg"
+    ]
+  },
+  {
+    "id": "product-38",
+    "name": "Guthni Handcrafted Multicolour Beaded Statement Necklace",
+    "category": "Jewellery · Collection",
+    "collectionSlug": [
+      "festive-edit",
+      "new-arrivals"
+    ],
+    "price": "Enquire for Price",
+    "fabric": "Yellow lightweight metal neckpiece, multicolour decorative beads, and assorted hanging charms & pendants",
+    "color": "Yellow neckpiece, Multicolour beads & charms",
+    "sizes": [
+      "15 to 16 inches"
+    ],
+    "claspType": "Slip-on / Open-collar style",
+    "description": "Handmade statement necklace featuring a bright yellow lightweight metal neckpiece decorated with multiple strands of colourful beads and assorted hanging decorative pendants and charms, creating a playful, bohemian and eye-catching look.",
+    "styling": "Suitable for casual outings, festive occasions, parties, traditional Indian outfits, fusion wear, kurtis, dresses or casual clothing.",
+    "care": "Store in a dry place. Clean gently with a soft cloth. Keep away from water and perfumes.",
+    "amazonLink": "https://www.amazon.in",
+    "ratio": "portrait",
+    "images": [
+      "new_webp_format_images/Product 38/WhatsApp Image 2026-09-23 at 14.46.38.jpeg"
+    ]
   }
 ];
