@@ -796,7 +796,7 @@ export const ALL_PRODUCTS = [
     "description": "Handcrafted ethnic bohemian choker necklace featuring an intricate royal blue fabric crochet center panel, tightly wrapped thread-coated light metal rod collar, genuine cowrie shells, traditional oxidized silver-toned cylindrical pendant, miniature bells, multi-colored seed bead strands, and dangling vintage-style coins.",
     "styling": "Perfectly complements ethnic wear, fusion outfits, sarees, kurtis, and bohemian-inspired casual clothing. Ideal for festive occasions, parties, and cultural events.",
     "care": "Store in a dry place away from moisture, perfumes, and direct chemicals. Wipe gently with a soft cotton cloth.",
-    "amazonLink": "https://www.amazon.in",
+    "amazonLink": "https://www.amazon.in/dp/B0HL363426",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 31/WhatsApp Image 2026-09-23 at 14.47.37.jpeg"
@@ -820,7 +820,7 @@ export const ALL_PRODUCTS = [
     "description": "Handcrafted traditional ethnic necklace featuring intricate thread embroidery, classic reflective mirror work, a rich fringe of natural cowrie shells (kaudi), and delicate pearl bead accents attached to a vibrant orange fabric-wrapped flexible neck wire.",
     "styling": "Perfect for traditional events, ethnic wear, Navratri, festive celebrations, cultural programs, parties, or bohemian-chic daily styling. Effortlessly complements sarees, lehengas, kurtis, and bohemian outfits.",
     "care": "Store in a dry place away from moisture, perfumes, and harsh chemicals. Handle mirror work and cowrie shells gently.",
-    "amazonLink": "https://www.amazon.in",
+    "amazonLink": "https://www.amazon.in/dp/B0HL3C413F",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 32/WhatsApp Image 2026-09-23 at 15.13.26.jpeg"
@@ -844,7 +844,7 @@ export const ALL_PRODUCTS = [
     "description": "Authentic handcrafted ethnic statement collar necklace featuring a traditional oxidized silver-plated central amulet (tabiz) pendant, vintage-style coin charms, and dangling multi-strand multicolored bead fringes attached to a sturdy metal-core collar ring enclosed in soft thread wrapping.",
     "styling": "Perfect complement for traditional attire, festive wear, boho-chic outfits, and ethnic fusion styles.",
     "care": "Store in a dry place away from moisture, perfumes, and direct chemicals to maintain the oxidized silver finish.",
-    "amazonLink": "https://www.amazon.in",
+    "amazonLink": "https://www.amazon.in/dp/B0HL464QK8",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 33/WhatsApp Image 2026-09-23 at 15.25.01.jpeg"
@@ -868,7 +868,7 @@ export const ALL_PRODUCTS = [
     "description": "Handcrafted statement choker necklace featuring a flexible green yarn-wrapped band adorned with an artistic floral cluster of genuine white cowrie shells, graceful silver-toned chains, smooth green resin beads, and a joyful cluster of multi-colored miniature ghungroos (bells) that create a soft chime.",
     "styling": "Perfect accessory for traditional wear, Garba nights, ethnic festivals, cultural events, or casual fusion outfits.",
     "care": "Keep thread and cowrie shells dry. Store in a soft pouch away from moisture and perfumes.",
-    "amazonLink": "https://www.amazon.in",
+    "amazonLink": "https://www.amazon.in/dp/B0HL3CHZYK",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 34/WhatsApp Image 2026-09-23 at 15.29.23.jpeg"
@@ -892,7 +892,7 @@ export const ALL_PRODUCTS = [
     "description": "Expertly handcrafted ethnic statement necklace featuring a vibrant pink thread-wrapped flexible metal ring, complemented by multi-strand silver-toned chains adorned with natural cowrie shells, fabric thread balls, and traditional ghungroos.",
     "styling": "Perfect accessory for ethnic wear, Navratri Garba outfits, bohemian fashion, cultural festivals, and casual styling.",
     "care": "Store in a dry place away from water and humidity. Clean gently with a soft dry cloth.",
-    "amazonLink": "https://www.amazon.in",
+    "amazonLink": "https://www.amazon.in/dp/B0HL3BTQGW",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 35/WhatsApp Image 2026-09-23 at 15.35.16.jpeg"
@@ -964,7 +964,7 @@ export const ALL_PRODUCTS = [
     "description": "Handmade statement necklace featuring a bright yellow lightweight metal neckpiece decorated with multiple strands of colourful beads and assorted hanging decorative pendants and charms, creating a playful, bohemian and eye-catching look.",
     "styling": "Suitable for casual outings, festive occasions, parties, traditional Indian outfits, fusion wear, kurtis, dresses or casual clothing.",
     "care": "Store in a dry place. Clean gently with a soft cloth. Keep away from water and perfumes.",
-    "amazonLink": "https://www.amazon.in",
+    "amazonLink": "https://www.amazon.in/dp/B0HL3LLWQD",
     "ratio": "portrait",
     "images": [
       "new_webp_format_images/Product 38/WhatsApp Image 2026-09-23 at 14.46.38.jpeg"

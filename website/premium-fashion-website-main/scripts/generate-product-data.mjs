@@ -69,7 +69,7 @@ const CUSTOM_DATA = {
     claspType: "Flexible open-ended choker collar",
     styling: "Perfectly complements ethnic wear, fusion outfits, sarees, kurtis, and bohemian-inspired casual clothing. Ideal for festive occasions, parties, and cultural events.",
     care: "Store in a dry place away from moisture, perfumes, and direct chemicals. Wipe gently with a soft cotton cloth.",
-    amazonLink: "https://www.amazon.in"
+    amazonLink: "https://www.amazon.in/dp/B0HL363426"
   },
   32: {
     name: "Guthni Handcrafted Gujarati Mirror Work & Cowrie Shell Choker",
@@ -80,7 +80,7 @@ const CUSTOM_DATA = {
     claspType: "Flexible neck wire collar style",
     styling: "Perfect for traditional events, ethnic wear, Navratri, festive celebrations, cultural programs, parties, or bohemian-chic daily styling. Effortlessly complements sarees, lehengas, kurtis, and bohemian outfits.",
     care: "Store in a dry place away from moisture, perfumes, and harsh chemicals. Handle mirror work and cowrie shells gently.",
-    amazonLink: "https://www.amazon.in"
+    amazonLink: "https://www.amazon.in/dp/B0HL3C413F"
   },
   33: {
     name: "Guthni Handcrafted Oxidized Silver Talisman Collar Necklace",
@@ -91,7 +91,7 @@ const CUSTOM_DATA = {
     claspType: "Open-ended flexible collar ring with smooth metallic bead terminals",
     styling: "Perfect complement for traditional attire, festive wear, boho-chic outfits, and ethnic fusion styles.",
     care: "Store in a dry place away from moisture, perfumes, and direct chemicals to maintain the oxidized silver finish.",
-    amazonLink: "https://www.amazon.in"
+    amazonLink: "https://www.amazon.in/dp/B0HL464QK8"
   },
   34: {
     name: "Guthni Handcrafted Green Thread & Cowrie Shell Statement Choker",
@@ -102,7 +102,7 @@ const CUSTOM_DATA = {
     claspType: "Slip-on / Flexible Band Style",
     styling: "Perfect accessory for traditional wear, Garba nights, ethnic festivals, cultural events, or casual fusion outfits.",
     care: "Keep thread and cowrie shells dry. Store in a soft pouch away from moisture and perfumes.",
-    amazonLink: "https://www.amazon.in"
+    amazonLink: "https://www.amazon.in/dp/B0HL3CHZYK"
   },
   35: {
     name: "Guthni Handcrafted Pink Thread Ring Necklace with Cowries & Ghungroo",
@@ -113,7 +113,7 @@ const CUSTOM_DATA = {
     claspType: "Flexible Open-Ring Style",
     styling: "Perfect accessory for ethnic wear, Navratri Garba outfits, bohemian fashion, cultural festivals, and casual styling.",
     care: "Store in a dry place away from water and humidity. Clean gently with a soft dry cloth.",
-    amazonLink: "https://www.amazon.in"
+    amazonLink: "https://www.amazon.in/dp/B0HL3BTQGW"
   },
   36: {
     name: "Guthni Handcrafted Yellow Textile & Faux Pearl Collar Necklace with Gold Coins",
@@ -135,7 +135,7 @@ const CUSTOM_DATA = {
     claspType: "Slip-on / Open-collar style",
     styling: "Suitable for casual outings, festive occasions, parties, traditional Indian outfits, fusion wear, kurtis, dresses or casual clothing.",
     care: "Store in a dry place. Clean gently with a soft cloth. Keep away from water and perfumes.",
-    amazonLink: "https://www.amazon.in"
+    amazonLink: "https://www.amazon.in/dp/B0HL3LLWQD"
   }
 };
 
